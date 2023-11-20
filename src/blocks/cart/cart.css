@@ -1,0 +1,14 @@
+.cart{
+    margin-top: 10px;
+}
+
+.cart h1{
+    color: var(--BlackText);
+
+    font-family: Segoe UI;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.28px;
+}

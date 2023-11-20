@@ -1,0 +1,25 @@
+.cart-result{
+    display: flex;
+    padding: 16px 24px 24px;
+    flex-direction: column;
+    gap: 24px;
+
+    border-radius: 16px;
+    background: var(--White);
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.30), 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.cart-result__price{
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-result__price:first-child{
+    margin-bottom: 10px;
+}
+
+.cart-result__price-total, .cart-result__price-count, .cart-result__price-discount{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

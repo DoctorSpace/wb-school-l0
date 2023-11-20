@@ -1,0 +1,16 @@
+.product-cart-disassembled{
+    margin-top: 3px;
+}
+
+.product-cart-disassembled img{
+    filter: grayscale(100%);
+}
+
+.product-cart-disassembled h4{
+    width: 300px;
+    color: var(--Gray);
+}
+
+.product-cart-disassembled p{
+    color: var(--Gray);
+}

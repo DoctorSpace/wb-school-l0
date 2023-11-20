@@ -1,0 +1,10 @@
+section{
+    padding: 24px 24px 36px;
+    display: grid;
+    grid-template-columns: minmax(640px,891px) minmax(304px,429px);
+
+    gap:32px;
+
+    background-color: var(--BackgroundSmoky);
+    border-radius: 24px;
+}

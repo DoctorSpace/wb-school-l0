@@ -1,0 +1,22 @@
+.delivery{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    margin-top: 40px;
+    padding: 18px 24px 24px 24px;
+
+    border-radius: 16px;
+    background-color: var(--BackgroundWhite);
+}
+
+.delivery h2{
+    color: var(--BlackText);
+
+    font-family: Segoe UI;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.24px;
+}

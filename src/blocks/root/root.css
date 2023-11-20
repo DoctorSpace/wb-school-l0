@@ -1,0 +1,34 @@
+.root {
+    min-width: 600px;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    font-family: Roboto,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+:root{
+    --White: rgba(255, 255, 255, 1);
+    --WhiteText: rgba(255, 255, 255, 1);
+
+    --BackgroundSmoky: rgba(246, 246, 250, 1);
+    --BackgroundWhite: rgba(255, 255, 255, 1);
+
+    --Black: rgba(0, 0, 0, 1);
+    --BlackText: rgba(0, 0, 0, 1);
+
+    --Gray: rgba(151, 151, 175, 1);
+    --RulersRulers: rgba(0, 0, 0, 0.1);
+    --RulersRulersInput: rgba(0, 0, 0, 0.2);
+
+    --DeepOrange: rgba(255, 151, 13, 1);
+    --Orange: rgba(245, 81, 35, 1);
+
+    --Green: rgba(12, 180, 119, 1);
+
+    --Violet: rgba(103, 37, 168, 1);
+    --Accent: rgba(203, 17, 171, 1);
+
+    --Transparent: rgba(0, 0, 0, 0);
+}

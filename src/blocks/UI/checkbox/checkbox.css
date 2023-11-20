@@ -1,0 +1,20 @@
+.checkbox_active{
+    cursor: pointer;
+
+    width: 22px;
+    height: 22px;
+    border: 0;
+    background-image: url(../../../img/checkboxON.svg);
+
+    border-radius: 6px;
+}
+
+.checkbox{
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    border: 0;
+
+    background-image: url(../../../img/checkboxOFF.svg);
+    border-radius: 6px;
+}

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Товары и точка</title>
+    <link rel="icon" href="./src/img/icon.svg">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/pages/index.css" />
+  </head>
+  <body>
+    <div class="root">
+      <header>
+        <div class="header__menu">
+          <button><img src="./src/img/menuIcon.svg" alt="Menu" /></button>
+          <h1>ТОВАРЫ И ТОЧКА</h1>
+        </div>
+
+        <div class="header__search">
+          <input placeholder="Я ищу..." />
+          <button><img src="./src/img/search.svg" alt="Search" /></button>
+        </div>
+
+        <div class="header__action">
+          <button class="header__action-profile">
+            <img src="./src/img/profile.svg" alt="Profile" />
+            <p>Профиль</p>
+          </button>
+          <button class="header__action-basket">
+            <div class="header__action-basket-count">1</div>
+            <img src="./src/img/basket.svg" alt="Basket" />
+            <p>Корзина</p>
+          </button>
+        </div>
+      </header>
+
+      <section>
+        <!-- =Корзина= -->
+        <div class="cart">
+          <h1>Корзина</h1>
+
+          <!-- Главное поле Активных товаров -->
+          <div class="cart-activ-item">
+            <!-- Поле Выбрать всё -->
+            <div class="cart-activ-item__allSelected">
+              <div class="cart-activ-item__allSelected-text">
+                <button id="selectAllbtn" class="checkbox_active"></button>
+                <p>Выбрать все</p>
+              </div>
+              <img src="../src/img/arrow.svg" />
+            </div>
+            <div class="line"></div>
+            <!-- Карточки товаров -->
+            <div class="cart-activ-item__cards">
+              <!-- Карточка 1-->
+              <div class="product-cart">
+                <div class="product-cart__block">
+                  <button id="selectCard-1" class="checkbox_active"></button>
+                  <img src="../src/img/product1.png" />
+                </div>
+
+                <div class="product-discription">
+                  <h4>Футболка UZcotton мужская</h4>
+                  <div class="product-discription__spec">
+                    <p>Цвет: белый</p>
+                    <p>Размер: 56</p>
+                  </div>
+                  <div class="product-discription__org">
+                    <p>Коледино WB</p>
+                    <div class="product-discription__org-icon">
+                      <p>OOO Вайлдберриз</p>
+                      <img src="../src/img/info.svg" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-quantity">
+                  <div class="product-quantity__control">
+                    <div class="product-quantity__control-min">−</div>
+                    <div class="product-quantity__control-num">1</div>
+                    <div class="product-quantity__control-max">+</div>
+                  </div>
+                  <p>Осталось 2 шт.</p>
+                  <div class="product-quantity__btn">
+                    <button><img src="../src/img/heart.svg" /></button>
+                    <button><img src="../src/img/bin.svg" /></button>
+                  </div>
+                </div>
+
+                <div class="product-price">
+                  <div class="product-price__actual-price">
+                    <p class="price-texe-h3">
+                      522
+                      <span>сом</span>
+                    </p>
+                  </div>
+                  <button class="product-price__full-price">
+                    <span id="full-price">1051 сом</span>
+                    <div class="tooltip">
+                      <div>
+                        <span>Скидка 55%</span>
+                        <p>- 300 сом</p>
+                      </div>
+                      <div>
+                        <span>Скидка покупателя 10%</span>
+                        <p>- 30 сом</p>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <!-- Карточка 2 -->
+              <div class="product-cart">
+                <div class="product-cart__block">
+                  <button id="selectCard-1" class="checkbox_active"></button>
+                  <img src="../src/img/product2.png" />
+                </div>
+
+                <div class="product-discription">
+                  <h4>
+                    Силиконовый чехол картхолдер (отверстия) для карт,
+                    прозрачный кейс бампер на Apple iPhone XR, MobiSafe
+                  </h4>
+                  <div class="product-discription__spec">
+                    <p>Цвет: прозрачный</p>
+                  </div>
+                  <div class="product-discription__org">
+                    <p>Коледино WB</p>
+                    <div class="product-discription__org-icon">
+                      <p>OOO Мегапрофстиль</p>
+                      <img src="../src/img/info.svg" />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Блок добавления -->
+                <div class="product-quantity">
+                  <div class="product-quantity__control">
+                    <div class="product-quantity__control-min">−</div>
+                    <div class="product-quantity__control-num">200</div>
+                    <div class="product-quantity__control-max">+</div>
+                  </div>
+                  <div class="product-quantity__btn">
+                    <button><img src="../src/img/heart.svg" /></button>
+                    <button><img src="../src/img/bin.svg" /></button>
+                  </div>
+                </div>
+
+                <div class="product-price">
+                  <div class="product-price__actual-price">
+                    <p class="price-texe-h4">
+                      2 100 047
+                      <span>сом</span>
+                    </p>
+                  </div>
+                  <button class="product-price__full-price">
+                    <span id="full-price">2 300 047 сом</span>
+                    <div class="tooltip">
+                      <div>
+                        <span>Скидка 55%</span>
+                        <p>- 300 сом</p>
+                      </div>
+                      <div>
+                        <span>Скидка покупателя 10%</span>
+                        <p>- 30 сом</p>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <!-- Карточка 3 -->
+              <div class="product-cart">
+                <div class="product-cart__block">
+                  <button id="selectCard-1" class="checkbox_active"></button>
+                  <img src="../src/img/product3.png" />
+                </div>
+
+                <div class="product-discription">
+                  <h4>
+                    Карандаши цветные Faber-Castell "Замок", набор 24 цвета,
+                    заточенные, шестигранные, Faber-Castell
+                  </h4>
+                  <div class="product-discription__org">
+                    <p>Коледино WB</p>
+                    <div class="product-discription__org-icon">
+                      <p>OOO Вайлдберриз</p>
+                      <img src="../src/img/info.svg" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-quantity">
+                  <div class="product-quantity__control">
+                    <div class="product-quantity__control-min">−</div>
+                    <div class="product-quantity__control-num">2</div>
+                    <div class="product-quantity__control-max">+</div>
+                  </div>
+                  <p>Осталось 2 шт.</p>
+                  <div class="product-quantity__btn">
+                    <button><img src="../src/img/heart.svg" /></button>
+                    <button><img src="../src/img/bin.svg" /></button>
+                  </div>
+                </div>
+
+                <div class="product-price">
+                  <div class="product-price__actual-price">
+                    <p class="price-texe-h3">
+                      494
+                      <span>сом</span>
+                    </p>
+                  </div>
+                  <button class="product-price__full-price">
+                    <span id="full-price">950 сом</span>
+                    <div class="tooltip">
+                      <div>
+                        <span>Скидка 55%</span>
+                        <p>- 300 сом</p>
+                      </div>
+                      <div>
+                        <span>Скидка покупателя 10%</span>
+                        <p>- 30 сом</p>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <!-- Конец карточек -->
+            </div>
+          </div>
+
+          <!-- Главное поле НЕАКТИВНЫХ товаров -->
+          <div class="cart-inactive-item">
+            <!-- Поле Выбрать всё -->
+            <div class="cart-inactive-item__allSelected">
+              <div class="cart-inactive-item__allSelected-text">
+                <p>Отсутствуют · 3 товара</p>
+              </div>
+              <img src="../src/img/arrow.svg" />
+            </div>
+
+            <div class="line"></div>
+
+            <!-- Карточки товаров -->
+            <div class="cart-inactive-item__cards">
+              <!-- Карточка 1-->
+              <div class="product-cart product-cart-disassembled">
+                <div class="product-cart__block">
+                  <img src="../src/img/product1.png" />
+                </div>
+
+                <div class="product-discription">
+                  <h4>Футболка UZcotton мужская</h4>
+                  <div class="product-discription__spec">
+                    <p>Цвет: белый</p>
+                    <p>Размер: 56</p>
+                  </div>
+                </div>
+
+                <div class="product-quantity">
+                  <div class="product-quantity__btn">
+                    <button><img src="../src/img/heart.svg" /></button>
+                    <button><img src="../src/img/bin.svg" /></button>
+                  </div>
+                </div>
+
+                <div class="product-price"></div>
+              </div>
+              <!-- 2 -->
+              <div class="product-cart product-cart-disassembled">
+                <div class="product-cart__block">
+                  <img src="../src/img/product2.png" />
+                </div>
+
+                <div class="product-discription">
+                  <h4>
+                    Силиконовый чехол картхолдер (отверстия) для карт,
+                    прозрачный кейс бампер на Apple iPhone XR, MobiSafe
+                  </h4>
+                  <div class="product-discription__spec">
+                    <p>Цвет: прозрачный</p>
+                  </div>
+                </div>
+
+                <div class="product-quantity">
+                  <div class="product-quantity__btn">
+                    <button><img src="../src/img/heart.svg" /></button>
+                    <button><img src="../src/img/bin.svg" /></button>
+                  </div>
+                </div>
+
+                <div class="product-price"></div>
+              </div>
+              <!-- 3 -->
+              <div class="product-cart product-cart-disassembled">
+                <div class="product-cart__block">
+                  <img src="../src/img/product3.png" />
+                </div>
+
+                <div class="product-discription">
+                  <h4>
+                    Карандаши цветные Faber-Castell "Замок", набор 24 цвета,
+                    заточенные, шестигранные, Faber-Castell
+                  </h4>
+                </div>
+
+                <div class="product-quantity">
+                  <div class="product-quantity__btn">
+                    <button><img src="../src/img/heart.svg" /></button>
+                    <button><img src="../src/img/bin.svg" /></button>
+                  </div>
+                </div>
+
+                <div class="product-price"></div>
+              </div>
+
+              <!-- Конец карточек -->
+            </div>
+          </div>
+
+
+          <!-- Cпособ доставки -->
+          <div class="delivery">
+
+            <!-- Доставка курьером -->
+            <div>
+              <h2>Способ доставки</h2>
+              <button>Изменить</button>
+            </div>
+
+            <!-- Место доставки -->
+            <div>
+              <div>
+                <div>
+                  <p class="tooltip">Пункт выдачи</p>
+                  <p>Доставка курьером</p>
+                  <p>г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д. 67/1
+                    <span>
+                      <img>
+                      <span>4.99</span>
+                      <span>Ежедневно с 10 до 21</span>
+                    </span>
+                  </p>
+                </div>
+  
+                <!-- Цена доставки -->
+                <div>
+                  <p>Стоимость</p>
+                  <p>Бесплатно</p>
+                </div>
+  
+                <!-- Дата доставки и картинки -->
+                <div>
+                  <p>5—6 февраля</p>
+                  <div>
+                    <div>
+                      <span>2</span>
+                    </div>
+                    <div>
+                      <span>200</span>
+                    </div>
+                    <div>
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+            <div>
+              <img>
+              <p>Обратная доставка товаров на склад при отказе — <span>бесплатно</span></p>
+            </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <!-- !!!!! -->
+        <!-- =ИТОГ= -->
+        <div class="cart-result">
+          <!-- цена товаров -->
+          <div class="cart-result__price">
+            <div class="cart-result__price-total">
+              <h1>Итого</h1>
+              <h1>2 101 063 сом</h1>
+            </div>
+            <div class="cart-result__price-count">
+              <p>203 товара</p>
+              <p>2 302 048 сом</p>
+            </div>
+            <div class="cart-result__price-discount">
+              <p>Скидка</p>
+              <p>−200 985 сом</p>
+            </div>
+            <div>
+              <p>Доставка</p>
+              <p>Бесплатно</p>
+            </div>
+          </div>
+
+          <!-- Доставка в пункт выдачи -->
+          <div>Доставка в пункт выдачи</div>
+          <!-- Обратная доставка -->
+          <div>Good</div>
+
+          <!-- Оплата картой -->
+          <div>Опалата картой</div>
+
+          <!-- Галочка списать оплату сейчас -->
+          <div></div>
+
+          <!-- Кнопка -->
+          <div></div>
+
+          <!-- Соглашение -->
+          <div>
+            <img src="#" />
+            <p>
+              Соглашаюсь с правилами пользования торговой площадкой и возврата
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+header {
+  background-color: var(--Violet);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 20px 16px 24px;
+  gap: 32px;
+
+  color: var(--WhiteText);
+}
+
+header button {
+  cursor: pointer;
+
+  background-color: var(--Transparent);
+  border: 0;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 16px;
+}
+
+
+.header__menu h1 {
+  color: var(--WhiteText);
+  font-family: Segoe UI;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: .85714;
+  font-variant: all-small-caps;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: 106px;
+  flex-shrink: 0;
+
+  margin-bottom: 10px;
+}
+
+.header__menu button {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.header__search {
+  position: relative;
+  width: 100%;
+  max-width: 970px;
+}
+
+.header__search input {
+  position: relative;
+
+  color: var(--WhiteText);
+  font-size: 20px;
+  
+  width: 100%;
+
+  max-width: 970px;
+  height: 48px;
+  box-sizing: border-box;
+
+  border-radius: 36px;
+  border: 0;
+  padding: 0 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header__search input::placeholder {
+  font-size: 18px;
+  opacity: 0.5;
+  color: var(--WhiteText);
+  font-family: Segoe UI;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+}
+
+.header__search button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 22px;
+  height: 22px;
+
+  top: 12px;
+  right: 24px;
+
+  position: absolute;
+  opacity: 0.5;
+}
+
+.header__search button img {
+  width: 22px;
+  height: 22px;
+}
+
+
+
+/* button */
+.header__action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 152px;
+
+  gap: 40px;
+}
+
+.header__action p {
+  color: var(--WhiteText);
+  font-family: Segoe UI;
+
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.header__action-profile {
+
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  align-items: center;
+  padding: 0;
+}
+
+
+
+.header__action-basket {
+  position: relative;
+  height: 56px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 6px;
+  padding: 0;
+}
+
+.header__action-basket img {
+  width: 30px;
+  height: 30px;
+}
+
+.header__action-basket-count {
+  color: var(--WhiteText);
+
+  display: inline-flex;
+  height: 16px;
+  width: 16px;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background: var(--system-orange, #f55123);
+
+  z-index: 2;
+
+  right: 4px;
+  top: -4px;
+
+  position: absolute;
+}

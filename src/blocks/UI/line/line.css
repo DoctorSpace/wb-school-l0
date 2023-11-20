@@ -1,0 +1,7 @@
+.line {
+  margin-top: 16px;
+  justify-items: center;
+  background-color: var(--RulersRulers);
+  width: 100%;
+  height: 1px;
+}
