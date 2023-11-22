@@ -1,0 +1,25 @@
+.cost-of-delivery{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.cost-of-delivery p{
+    color: var(--BlackText);
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.cost-of-delivery span{
+    color: var(--BlackText);
+
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+

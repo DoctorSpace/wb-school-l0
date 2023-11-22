@@ -1,20 +1,20 @@
-.delivery {
+.payment {
   display: flex;
   flex-direction: column;
 
-  margin-top: 40px;
+  margin-top: 17px;
   padding: 15px 24px 24px 24px;
 
   border-radius: 16px;
   background-color: var(--BackgroundWhite);
 }
 
-.delivery__method {
+.payment__method {
   display: flex;
   justify-content: space-between;
 }
 
-.delivery__method h2 {
+.payment__method h2 {
   color: var(--BlackText);
 
   font-family: Segoe UI;
@@ -25,17 +25,14 @@
   letter-spacing: -0.24px;
 }
 
-.delivery__method button {
+.payment__method button {
   border: 0;
   background-color: var(--Transparent);
   cursor: pointer;
   padding: 0;
-
   justify-self: end;
   align-self: end;
-
   color: var(--Accent);
-
   font-family: Segoe UI;
   font-size: 16px;
   font-style: normal;
@@ -43,34 +40,32 @@
   line-height: 24px;
 }
 
-.delivery__info {
-  margin-top: 18px;
-  margin-bottom: 20px;
-
+.payment__card {
   display: flex;
-  flex-direction: column;
   justify-content: start;
 
-  gap: 16px;
+  margin-top: 18px;
+  margin-bottom: 7px;
 }
 
-.delivery__notice {
-  display: flex;
-  align-items: center;
-
-  gap: 8px;
+.payment__card img {
+  margin-right: 10px;
 }
 
-.delivery__notice p {
+.payment__card p {
+  margin-right: 12px;
+
+  color: var(--BlackText);
+
   font-family: Segoe UI;
-  font-size: 13px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 24px;
 }
 
-.delivery__notice span {
-  color: var(--Green);
+.payment__info {
+  color: var(--Gray);
 
   font-family: Segoe UI;
   font-size: 13px;

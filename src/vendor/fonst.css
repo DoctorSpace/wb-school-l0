@@ -3,8 +3,8 @@
     font-style:  normal;
     font-weight: 400;
     font-display: swap;
-    src: url("./SegoeUI.woff2") format("woff2"),
-         url("./SegoeUI.woff") format("woff");
+    src: url("./SegoeUI/SegoeUI.woff2") format("woff2"),
+         url("./SegoeUI/SegoeUI.woff") format("woff");
 }
 
 @font-face {
@@ -12,8 +12,8 @@
     font-style:  normal;
     font-weight: 600;
     font-display: swap;
-    src: url("./SegoeUI-SemiBold.woff2") format("woff2"),
-         url("./SegoeUI-SemiBold.woff") format("woff");
+    src: url("./SegoeUI/SegoeUI-SemiBold.woff2") format("woff2"),
+         url("./SegoeUI/SegoeUI-SemiBold.woff") format("woff");
 } 
 
 @font-face {
@@ -21,6 +21,6 @@
     font-style:  normal;
     font-weight: 700;
     font-display: swap;
-    src: url("./SegoeUI-Bold.woff2") format("woff2"),
-         url("./SegoeUI-Bold.woff") format("woff");
+    src: url("./SegoeUI/SegoeUI-Bold.woff2") format("woff2"),
+         url("./SegoeUI/SegoeUI-Bold.woff") format("woff");
 }

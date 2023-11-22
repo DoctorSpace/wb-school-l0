@@ -25,25 +25,21 @@ header button {
   gap: 16px;
 }
 
-
 .header__menu h1 {
   color: var(--WhiteText);
   font-family: Segoe UI;
   font-size: 28px;
   font-style: normal;
   font-weight: 600;
+  letter-spacing: 2.9px;
   line-height: .85714;
   font-variant: all-small-caps;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
   width: 106px;
   flex-shrink: 0;
-
-  margin-bottom: 10px;
 }
 
 .header__menu button {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,6 +54,7 @@ header button {
   position: relative;
   width: 100%;
   max-width: 970px;
+  min-width: 594px;
 }
 
 .header__search input {
@@ -65,10 +62,10 @@ header button {
 
   color: var(--WhiteText);
   font-size: 20px;
-  
-  width: 100%;
 
+  width: 100%;
   max-width: 970px;
+  min-width: 594px;
   height: 48px;
   box-sizing: border-box;
 
@@ -79,14 +76,16 @@ header button {
 }
 
 .header__search input::placeholder {
-  font-size: 18px;
   opacity: 0.5;
   color: var(--WhiteText);
   font-family: Segoe UI;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 133.333% */
+  line-height: 24px;
+
+
+  text-align: start;
 }
 
 .header__search button {
@@ -98,7 +97,7 @@ header button {
   height: 22px;
 
   top: 12px;
-  right: 24px;
+  right: 22px;
 
   position: absolute;
   opacity: 0.5;
@@ -109,17 +108,13 @@ header button {
   height: 22px;
 }
 
-
-
-/* button */
 .header__action {
   display: flex;
   flex-direction: row;
   align-items: center;
 
   width: 152px;
-
-  gap: 40px;
+  gap: 43px;
 }
 
 .header__action p {
@@ -133,7 +128,6 @@ header button {
 }
 
 .header__action-profile {
-
   height: 48px;
   display: flex;
   flex-direction: column;
@@ -143,8 +137,6 @@ header button {
   align-items: center;
   padding: 0;
 }
-
-
 
 .header__action-basket {
   position: relative;
@@ -176,10 +168,31 @@ header button {
   border-radius: 16px;
   background: var(--system-orange, #f55123);
 
+  text-align: center;
+  font-family: Segoe UI;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 180% */
+
   z-index: 2;
 
   right: 4px;
   top: -4px;
 
   position: absolute;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__search {
+    width: 594px;
+  }
+  
+  .header__search input {
+    width: 594px;
+  }
+
+  .header__action {
+    gap:43px;
+  }
 }

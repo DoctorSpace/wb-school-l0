@@ -1,0 +1,29 @@
+.result-notice{
+    padding-left: 10px;
+    margin-top: 22px;
+
+    display: flex;
+    flex-direction: row;
+
+    gap:8px;
+}
+
+.result-notice p{
+    color: var(--BlackText);
+
+    font-family: Segoe UI;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.result-notice span{
+    color: var(--Green);
+
+    font-family: Segoe UI;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}

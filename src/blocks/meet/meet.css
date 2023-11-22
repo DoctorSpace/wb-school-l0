@@ -1,0 +1,44 @@
+.meet{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.meet__title{
+    width: 153px;
+}
+
+
+.meet__title p{
+    color: var(--BlackText);
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.meet__text{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.meet__text img{
+    margin-right: 4px;
+}
+
+.meet__text-time{
+    display: flex;
+    flex-direction: row;
+}
+
+.meet__text-time p{
+    margin-right: 8px;
+
+    font-family: Segoe UI;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}

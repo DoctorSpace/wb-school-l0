@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Товары и точка</title>
-    <link rel="icon" href="./src/img/icon.svg">
+    <link rel="icon" href="./src/img/icon.svg" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/pages/index.css" />
@@ -34,7 +34,6 @@
       </header>
 
       <section>
-        <!-- =Корзина= -->
         <div class="cart">
           <h1>Корзина</h1>
 
@@ -316,112 +315,204 @@
             </div>
           </div>
 
-
           <!-- Cпособ доставки -->
           <div class="delivery">
-
-            <!-- Доставка курьером -->
-            <div>
+            <div class="delivery__method">
               <h2>Способ доставки</h2>
               <button>Изменить</button>
             </div>
 
-            <!-- Место доставки -->
-            <div>
-              <div>
-                <div>
-                  <p class="tooltip">Пункт выдачи</p>
-                  <p>Доставка курьером</p>
-                  <p>г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д. 67/1
-                    <span>
-                      <img>
-                      <span>4.99</span>
-                      <span>Ежедневно с 10 до 21</span>
-                    </span>
+            <div class="delivery__info">
+              <div class="meet">
+                <div class="meet__title">
+                  <p class="tooltip">Доставка курьером</p>
+                  <p>Пункт выдачи</p>
+                </div>
+                <div class="meet__text">
+                  <p>
+                    Бишкек, улица Ахматбека Суюмбаева, 12/1
                   </p>
+                  <div class="meet__text-time">
+                    <img src="./src/img/star.svg"/>
+                    <p>4.99</p>
+                    <p>Ежедневно с 10 до 21 </p>
+                  </div>
                 </div>
-  
-                <!-- Цена доставки -->
-                <div>
-                  <p>Стоимость</p>
-                  <p>Бесплатно</p>
-                </div>
-  
-                <!-- Дата доставки и картинки -->
-                <div>
+              </div>
+            
+              <div class="cost-of-delivery">
+                <p>Стоимость доставки</p>
+                <span>Бесплатно</span>
+              </div>
+
+              <div class="arrival-date">
+                <div class="arrival-date__kit">
                   <p>5—6 февраля</p>
-                  <div>
-                    <div>
-                      <span>2</span>
+                  <div class="arrival-date__kit-items">
+                    <div class="arrival-date__kit-item">
+                      <img src="./src/img/product1.png">
+                    </div class="arrival-date__kit-items">
+                    <div class="arrival-date__kit-item">
+                      <img src="./src/img/product2.png">
+                      <span>184</span>
                     </div>
-                    <div>
-                      <span>200</span>
-                    </div>
-                    <div>
+                    <div class="arrival-date__kit-item">
+                      <img src="./src/img/product3.png">
                       <span>2</span>
                     </div>
                   </div>
                 </div>
-            </div>
-            
-            <div>
-              <img>
-              <p>Обратная доставка товаров на склад при отказе — <span>бесплатно</span></p>
+                <div class="arrival-date__kit">
+                  <p>7—8 февраля</p>
+                  <div class="arrival-date__kit-items">
+                    <div class="arrival-date__kit-item">
+                      <img src="./src/img/product2.png">
+                      <span>16</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
+            <div class="delivery__notice">
+              <img src="./src/img/greenTick.svg" />
+              <p>
+                Обратная доставка товаров на cклад при отказе —
+                <span>бесплатно</span>
+              </p>
             </div>
           </div>
 
+          <!-- Способ оплаты -->
+          <div class="payment">
+            <div class="payment__method">
+              <h2>Способ оплаты</h2>
+              <button>Изменить</button>
+            </div>
+
+            <div class="payment__card">
+              <img src="./src/img/cards/mir.svg">
+              <p>1234 56•• •••• 1234</p>
+              <p>01/30</p>
+            </div>
+
+            <p class="payment__info">Спишем оплату с карты при получении</p>
+          </div>
+
+          <!-- Получатель -->
+          <div class="recipient">
+            <h2>Получатель</h2>
+
+              
+            <div class="recipient__name">
+                <div>
+                  <span>Имя</span>
+                  <input placeholder="Имя">
+                </div>
+                <div>
+                  <span>Фамилия</span>
+                  <input placeholder="Фамилия">
+                </div>
+              </div>
+
+              <div class="recipient__contacts">
+                <div>
+                  <span>Почта</span>
+                  <input placeholder="Почта">
+                </div>
+                <div>
+                  <span>Телефон</span>
+                  <input placeholder="Телефон">
+                </div>
+                <div>
+                  <span>ИНН</span>
+                  <input placeholder="ИНН">
+                  <p>Для таможенного оформления</p>
+                </div>
+
+              </div>
+
+          </div>
         </div>
+
+        
 
 
 
         <!-- !!!!! -->
         <!-- =ИТОГ= -->
         <div class="cart-result">
-          <!-- цена товаров -->
-          <div class="cart-result__price">
-            <div class="cart-result__price-total">
-              <h1>Итого</h1>
-              <h1>2 101 063 сом</h1>
+          <div class="total-price">
+            <div class="total-price__actual">
+              <h2>Итого</h2>
+              <h2>2 101 063<span> сом</span></h2>
             </div>
-            <div class="cart-result__price-count">
+            <div class="total-price__count">
               <p>203 товара</p>
-              <p>2 302 048 сом</p>
+              <span>2 302 048 сом</span>
             </div>
-            <div class="cart-result__price-discount">
+            <div class="total-price__discount">
               <p>Скидка</p>
-              <p>−200 985 сом</p>
+              <span>−200 985 сом</span>
             </div>
-            <div>
+            <div class="total-price__sale">
               <p>Доставка</p>
-              <p>Бесплатно</p>
+              <span>Бесплатно</span>
             </div>
           </div>
 
           <!-- Доставка в пункт выдачи -->
-          <div>Доставка в пункт выдачи</div>
+          <div class="final-delivery">
+            <div class="final-delivery__changes">
+              <h4>Доставка в пункт выдачи</h4>
+              <img src="./src/img/pen.svg">
+            </div>
+            <div class="final-delivery__adress">
+              <p>Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+              <span>5–8 фев</span>
+            </div>
+          </div>
+
           <!-- Обратная доставка -->
-          <div>Good</div>
+          <div class="result-notice">
+            <img src="./src/img/greenTick.svg">
+            <p>Обратная доставка товаров на склад при отказе — <span>бесплатно</span></p>
+          </div>
 
           <!-- Оплата картой -->
-          <div>Опалата картой</div>
+          <div class="result-payment">
+            <div class="result-payment__changes">
+              <h4>Оплата картой</h4>
+              <img src="./src/img/pen.svg">
+            </div>
+  
+            <div class="result-payment__card">
+              <img src="./src/img/cards/visa.svg">
+              <p>1234 12•• •••• 1234</p>
+            </div>
+          </div>
 
           <!-- Галочка списать оплату сейчас -->
-          <div></div>
+          <div class="cart-result__writeOffPayment">
+            <div class="cart-result__writeOffPayment-btn">
+              <button id="writeOffPayment"><img src="./src/img/checkboxOFF.svg"></button>
+              <label for="writeOffPayment">Списать оплату сразу</label>
+            </div>
+            <p>Спишем оплату с карты при получении</p>
+          </div>
 
-          <!-- Кнопка -->
-          <div></div>
+          <button class="cart-result__button">Заказать</button>
 
-          <!-- Соглашение -->
-          <div>
-            <img src="#" />
+          <div class="cart-result__agreement">
+            <img src="./src/img/check.svg" />
             <p>
-              Соглашаюсь с правилами пользования торговой площадкой и возврата
+              Соглашаюсь с правилами пользования торговой площадкой и возврата
             </p>
           </div>
         </div>
       </section>
+
+      <p class="watermark">© 2022 ООО «Товары и точка»</p>
     </div>
   </body>
 </html>

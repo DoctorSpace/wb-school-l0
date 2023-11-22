@@ -1,0 +1,51 @@
+.total-price{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.total-price p{
+
+}
+
+
+.total-price__actual{
+    margin-bottom: 8px;
+}
+
+.total-price__actual h2{
+    color: var(--BlackText);
+
+    font-family: Segoe UI;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.24px;
+}
+
+.total-price__actual span{
+    color: var(--BlackText);
+
+    font-family: Segoe UI;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+}
+
+.total-price__actual, .total-price__count, .total-price__discount, .total-price__sale{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    color: var(--BlackText);
+
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}

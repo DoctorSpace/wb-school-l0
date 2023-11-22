@@ -3,10 +3,16 @@
 @import url(../vendor/fonst.css);
 
 
-/* Blocks */
+/* --Blocks-- */
+
+/* Root */
 @import url(../blocks/body/body.css);
 @import url(../blocks/root/root.css);
+
+/* Header */
 @import url(../blocks/header/header.css);
+
+/* Cart */
 @import url(../blocks/section/section.css);
 @import url(../blocks/cart/cart.css);
 @import url(../blocks/cart-activ-item/cart-activ-item.css);
@@ -16,17 +22,34 @@
 @import url(../blocks/product-price/product-price.css);
 @import url(../blocks/tooltip/tooltip.css);
 
+/* Cart-inactive */
 @import url(../blocks/cart-inactive-item/cart-inactive-item.css);
 @import url(../blocks/product-cart/product-cart-disassembled.css);
 
+/* Delivery */
 @import url(../blocks/delivery/delivery.css);
+@import url(../blocks/meet/meet.css);
+@import url(../blocks/cost-of-delivery/cost-of-delivery.css);
+@import url(../blocks/arrival-date/arrival-date.css);
 
+/* Payment */
+@import url(../blocks/payment/payment.css);
 
+/* Recipient */
+@import url(../blocks/recipient/recipient.css);
 
+/* 000 */
 
-/* --- */
+/* cart-result */
 @import url(../blocks/cart-result/cart-result.css);
+@import url(../blocks/total-price/total-price.css);
+@import url(../blocks/final-delivery/final-delivery.css);
+@import url(../blocks/result-notice/result-notice.css);
+@import url(../blocks/result-payment/result-payment.css);
 
+
+/* watermark */
+@import url(../blocks/watermark/watermark.css);
 
 
 /* UI */

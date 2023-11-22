@@ -20,7 +20,7 @@
 .product-discription__spec {
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 18px;
 }
 
 .product-discription__spec p {
@@ -32,10 +32,11 @@
   line-height: 16px;
 }
 
+
 .product-discription__org {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 1px;
 }
 
 .product-discription__org p {
@@ -51,5 +52,6 @@
 .product-discription__org-icon {
   display: flex;
   flex-direction: row;
-  gap: 6px;
+  align-items: center;
+  gap: 7px;
 }

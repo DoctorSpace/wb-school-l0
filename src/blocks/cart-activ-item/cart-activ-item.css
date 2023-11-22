@@ -1,5 +1,5 @@
 .cart-activ-item__allSelected {
-  margin-top: 27px;
+  margin-top: 26px;
 
   background-color: var(--BackgroundSmoky);
 
@@ -18,12 +18,11 @@
 .cart-activ-item__allSelected-text p {
   color: var(--BlackText);
 
-  /* Сайт/Body */
   font-family: Segoe UI;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 
 .cart-activ-item__line {
@@ -35,6 +34,8 @@
 }
 
 .cart-activ-item__cards {
+
+  margin-top: 2px;
   display: flex;
   flex-direction: column;
   gap: 20px;

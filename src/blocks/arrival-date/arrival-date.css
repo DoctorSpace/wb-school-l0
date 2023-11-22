@@ -1,0 +1,72 @@
+.arrival-date {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.arrival-date__kit {
+  display: flex;
+  flex-direction: row;
+
+  gap: 32px;
+}
+
+.arrival-date__kit p {
+  width: 153px;
+
+  color: var(--BlackText);
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.arrival-date__kit-items {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.arrival-date__kit-item {
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+}
+
+.arrival-date__kit-item img {
+  width: 40px;
+  height: 56px;
+
+  border-radius: 8px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(0, 0, 0, 0.05) 100%
+    ),
+    lightgray -0.855px -1.048px / 104.072% 103.363% no-repeat;
+}
+
+.arrival-date__kit-item span {
+  position: absolute;
+  right: -4px;
+  top: -8px;
+  z-index: 3;
+
+  height: 16px;
+  min-width: 8px;
+  padding: 0 4px;
+
+  color: var(--WhiteText);
+  border-radius: 8px;
+  background: var(--system-orange, var(--Orange));
+
+  text-align: center;
+  font-family: Segoe UI;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+}

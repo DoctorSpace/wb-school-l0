@@ -1,0 +1,41 @@
+.result-payment {
+  margin-top: 38px;
+
+  display: flex;
+  flex-direction: column;
+  gap:6px;
+}
+
+.result-payment h4 {
+  color: var(--BlackText);
+
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+
+.result-payment__changes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.result-payment__card {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.result-payment__card p{
+  color: var(--BlackText);
+  text-align: right;
+
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}

@@ -31,19 +31,21 @@
   .product-quantity__control-min,
   .product-quantity__control-max {
     background-color: var(--BackgroundWhite);
-    padding: 10px 7px 12px 10px;
+    padding: 7px 9px 12px 10px;
     cursor: pointer;
   
     font-family: Segoe UI;
+    text-align: center;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.1px;
   }
   
   .product-quantity__control-num {
     margin: 0 auto;
+    padding: 0 0 5px 0;
     text-align: center;
     background-color: var(--BackgroundWhite);
   
