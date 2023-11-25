@@ -1,12 +1,13 @@
 .watermark {
   text-align: center;
-  margin-top: 23px;
+
+  padding: 24px;
 
   color: var(--White);
   opacity: 0.7;
   font-family: Segoe UI;
   font-size: 13px;
-  line-height: 16px;
+  line-height: 22px;
   font-style: normal;
   font-weight: 400;
 }

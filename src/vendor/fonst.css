@@ -3,8 +3,8 @@
     font-style:  normal;
     font-weight: 400;
     font-display: swap;
-    src: url("./SegoeUI/SegoeUI.woff2") format("woff2"),
-         url("./SegoeUI/SegoeUI.woff") format("woff");
+    src: url("./SegoeUI/SegoeUI-Regular.woff") format("woff2"),
+         url("./SegoeUI/SegoeUI-Regular.woff.woff") format("woff");
 }
 
 @font-face {

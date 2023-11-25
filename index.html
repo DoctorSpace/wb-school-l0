@@ -12,8 +12,9 @@
       <header>
         <div class="header__menu">
           <button><img src="./src/img/menuIcon.svg" alt="Menu" /></button>
-          <h1>ТОВАРЫ И ТОЧКА</h1>
         </div>
+
+        <h1>ТОВАРЫ И ТОЧКА</h1>
 
         <div class="header__search">
           <input placeholder="Я ищу..." />
@@ -30,8 +31,13 @@
             <img src="./src/img/basket.svg" alt="Basket" />
             <p>Корзина</p>
           </button>
+
+          <button class="header__action-search">
+            <img src="./src/img/search.svg" alt="Search" />
+          </button>
         </div>
       </header>
+
 
       <section>
         <div class="cart">
@@ -50,13 +56,13 @@
             <div class="line"></div>
             <!-- Карточки товаров -->
             <div class="cart-activ-item__cards">
-              <!-- Карточка 1-->
+
+              <!-- Карточка 1 -->
               <div class="product-cart">
                 <div class="product-cart__block">
                   <button id="selectCard-1" class="checkbox_active"></button>
                   <img src="./src/img/product1.png" />
                 </div>
-
                 <div class="product-discription">
                   <h4>Футболка UZcotton мужская</h4>
                   <div class="product-discription__spec">
@@ -107,6 +113,68 @@
                   </button>
                 </div>
               </div>
+
+
+              <!-- Карточка 1 мобильный -->
+              <div class="product-cart-mobile dNone">
+
+                <div class="product-cart_row1">
+                  <div class="product-cart-mobile__block">
+                    <button id="selectCard-1" class="checkbox_active"></button>
+                    <p class="product-cart__size">56</p>
+                    <img src="./src/img/product1.png" />
+                  </div>
+  
+                  <div class="product-discription-mobile">
+                    <div class="product-price-mobile">
+                      <div class="product-price__actual-price-mobile">
+                        <p class="price-texe-h3">522
+                          <span>сом</span>
+                          <button class="product-price__full-price">
+                            <span id="full-price">1051 сом</span>
+                            <div class="tooltip">
+                              <div>
+                                <span>Скидка 55%</span>
+                                <p>- 300 сом</p>
+                              </div>
+                              <div>
+                                <span>Скидка покупателя 10%</span>
+                                <p>- 30 сом</p>
+                              </div>
+                            </div>
+                          </button>
+                        </p>
+                      </div>
+                    </div>
+                    <h4>Футболка UZcotton мужская</h4>
+                    <div class="product-discription-mobile__spec">
+                      <p>Цвет: белый</p>
+                    </div>
+                    <div class="product-discription__org">
+                      <p>Коледино WB</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-cart_row2">
+                  <div class="product-quantity-row">
+                    <div class="product-quantity-mobile">
+                        <div class="product-quantity-mobile__control">
+                          <div class="product-quantity-mobile__control-min">−</div>
+                          <div class="product-quantity-mobile__control-num">1</div>
+                          <div class="product-quantity-mobile__control-max">+</div>
+                        </div>
+                    </div>
+                    <p>Осталось 2 шт.</p>
+                  </div>
+  
+                  <div class="product-quantity-mobile__btn">
+                    <button><img src="./src/img/heart.svg" /></button>
+                    <button><img src="./src/img/bin.svg" /></button>
+                  </div>
+                </div>
+              </div>
+
               <!-- Карточка 2 -->
               <div class="product-cart">
                 <div class="product-cart__block">
@@ -501,7 +569,7 @@
             <p>Спишем оплату с карты при получении</p>
           </div>
 
-          <button class="cart-result__button">Заказать</button>
+          <button id="OrderBtn" class="cart-result__button">Заказать</button>
 
           <div class="cart-result__agreement">
             <img src="./src/img/check.svg" />
@@ -514,5 +582,7 @@
 
       <p class="watermark">© 2022 ООО «Товары и точка»</p>
     </div>
+
+    <script src="./src/pages/index.js" type="module"></script>
   </body>
 </html>

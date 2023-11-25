@@ -5,9 +5,23 @@ header {
   justify-content: space-between;
 
   padding: 16px 20px 16px 24px;
-  gap: 32px;
-
   color: var(--WhiteText);
+}
+
+header h1{
+  color: var(--WhiteText);
+  font-family: Segoe UI;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 2.9px;
+  line-height: .85714;
+  font-variant: all-small-caps;
+  text-transform: uppercase;
+  width: 106px;
+  flex-shrink: 0;
+
+  margin-left: 16px;
 }
 
 header button {
@@ -25,24 +39,13 @@ header button {
   gap: 16px;
 }
 
-.header__menu h1 {
-  color: var(--WhiteText);
-  font-family: Segoe UI;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: 2.9px;
-  line-height: .85714;
-  font-variant: all-small-caps;
-  text-transform: uppercase;
-  width: 106px;
-  flex-shrink: 0;
-}
 
 .header__menu button {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  padding: 0;
 
   width: 48px;
   height: 48px;
@@ -53,6 +56,8 @@ header button {
 .header__search {
   position: relative;
   width: 100%;
+
+  margin: 0 32px;
   max-width: 970px;
   min-width: 594px;
 }
@@ -150,6 +155,7 @@ header button {
   padding: 0;
 }
 
+
 .header__action-basket img {
   width: 30px;
   height: 30px;
@@ -183,6 +189,10 @@ header button {
   position: absolute;
 }
 
+.header__action-search{
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
   .header__search {
     width: 594px;
@@ -196,3 +206,83 @@ header button {
     gap:43px;
   }
 }
+
+@media screen and (max-width: 1022px) {
+  .header__search {
+    width: 100%;
+  }
+  
+  .header__search input {
+    width: 100%;
+  }
+
+  .header__action {
+    gap:43px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .header__search {
+    display: none;
+  }
+
+
+  .header__menu button{
+    border: 0;
+  }
+
+  header{
+    padding: 0 13px;
+    justify-content: space-between;
+  }
+  
+  header h1 {
+    color: var(--WhiteText);
+    font-family: Segoe UI;
+    font-size: 9.2vw;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
+  
+    font-variant: all-small-caps;
+    text-align: center;
+
+    padding: 11px 4px 21px 4px;
+
+    width: auto;
+    margin: 0 16px;
+  }
+
+  .header__action{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    gap:0;
+  }
+
+  .header__action-basket, .header__action-profile{
+    display: none;
+  }
+
+  .header__action-search{
+    display: block;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 48px;
+    height: 48px;
+  }
+
+  .header__action-search img{
+    padding: 0;
+    width: 28px;
+    height: 28px;
+  }
+  
+}
+

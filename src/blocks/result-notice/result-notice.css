@@ -1,10 +1,12 @@
 .result-notice{
-    padding-left: 10px;
-    margin-top: 22px;
+    padding: 8px 8px 12px;
+    margin-top: 14px;
 
     display: flex;
     flex-direction: row;
 
+    background-color: var(--BackgroundSmoky);
+    border-radius: 8px;
     gap:8px;
 }
 

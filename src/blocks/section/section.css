@@ -1,5 +1,5 @@
 section{
-    padding: 24px 24px 36px;
+    padding: 24px 24px 32px;
     display: grid;
     grid-template-columns: minmax(640px,891px) minmax(304px,429px);
 
@@ -9,3 +9,9 @@ section{
     border-radius: 24px;
 }
 
+
+@media (max-width: 768px) {
+    section{
+        display: block;
+    }
+}
