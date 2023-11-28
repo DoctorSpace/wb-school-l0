@@ -11,32 +11,24 @@
 .product-price__actual-price {
   display: flex;
   flex-direction: row;
-}
-
-.product-price__actual-price p {
-  color: var(--BlackText);
-
-  font-family: Segoe UI;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px;
+  gap:4px;
 }
 
 .product-price__actual-price span {
   align-self: end;
-  color: var(--BlackText);
-
-  font-family: Segoe UI;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
 }
 
 .product-price__full-price {
+  position: relative;
+
+  width: 100px;
+
+  display: flex;
+
+  justify-content: end;
+
   background-color: transparent;
   border: none;
-  border-bottom: 1px dashed var(--Gray);
   color: var(--Gray);
   cursor: pointer;
   margin: 0;
@@ -46,9 +38,15 @@
 
 .product-price__full-price span {
 
+  border-bottom: 1px dashed var(--Gray);
+
   font-family: Segoe UI;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
+}
+
+.product-price__full-price span:hover + dialog{
+  display: flex;
 }

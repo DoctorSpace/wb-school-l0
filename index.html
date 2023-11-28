@@ -14,7 +14,7 @@
           <button><img src="./src/img/menuIcon.svg" alt="Menu" /></button>
         </div>
 
-        <h1>ТОВАРЫ И ТОЧКА</h1>
+        <h1 class="main-h1">ТОВАРЫ И ТОЧКА</h1>
 
         <div class="header__search">
           <input placeholder="Я ищу..." />
@@ -41,7 +41,7 @@
 
       <section>
         <div class="cart">
-          <h1>Корзина</h1>
+          <h1 class="title-h1">Корзина</h1>
 
           <!-- Главное поле Активных товаров -->
           <div class="cart-activ-item">
@@ -55,10 +55,10 @@
             </div>
             <div class="line"></div>
             <!-- Карточки товаров -->
-            <div class="cart-activ-item__cards">
+            <div id="activCarts" class="cart-activ-item__cards">
 
               <!-- Карточка 1 -->
-              <div class="product-cart">
+              <!-- <div class="product-cart">
                 <div class="product-cart__block">
                   <button id="selectCard-1" class="checkbox_active"></button>
                   <img src="./src/img/product1.png" />
@@ -73,7 +73,14 @@
                     <p>Коледино WB</p>
                     <div class="product-discription__org-icon">
                       <p>OOO Вайлдберриз</p>
-                      <img src="./src/img/info.svg" />
+                      <div class="product-discription__orgnInfo">
+                        <img src="./src/img/info.svg" />
+                        <dialog class="dialog-orgnInfo">
+                          <h5>OOO «МЕГАПРОФСТИЛЬ»</h5>
+                          <span>ОГРН: 5167746237148</span>
+                          <span>129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34</span>
+                        </dialog>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -86,8 +93,8 @@
                   </div>
                   <p>Осталось 2 шт.</p>
                   <div class="product-quantity__btn">
-                    <button><img src="./src/img/heart.svg" /></button>
-                    <button><img src="./src/img/bin.svg" /></button>
+                    <button class="product-quantity__btn-heart"></button>
+                    <button id="bin" class="product-quantity__btn-bin"></button>
                   </div>
                 </div>
 
@@ -100,23 +107,23 @@
                   </div>
                   <button class="product-price__full-price">
                     <span id="full-price">1051 сом</span>
-                    <div class="tooltip">
-                      <div>
+                    <dialog class="dialog-price">
+                      <div class="dialog-price__sale">
                         <span>Скидка 55%</span>
                         <p>- 300 сом</p>
                       </div>
-                      <div>
+                      <div class="dialog-price__saleCustomer">
                         <span>Скидка покупателя 10%</span>
                         <p>- 30 сом</p>
                       </div>
-                    </div>
+                    </dialog>
                   </button>
                 </div>
-              </div>
+              </div> -->
 
 
               <!-- Карточка 1 мобильный -->
-              <div class="product-cart-mobile dNone">
+              <!-- <div class="product-cart-mobile dNone">
 
                 <div class="product-cart_row1">
                   <div class="product-cart-mobile__block">
@@ -173,10 +180,10 @@
                     <button><img src="./src/img/bin.svg" /></button>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <!-- Карточка 2 -->
-              <div class="product-cart">
+              <!-- <div class="product-cart">
                 <div class="product-cart__block">
                   <button id="selectCard-1" class="checkbox_active"></button>
                   <img src="./src/img/product2.png" />
@@ -197,10 +204,10 @@
                       <img src="./src/img/info.svg" />
                     </div>
                   </div>
-                </div>
+                </div> -->
 
                 <!-- Блок добавления -->
-                <div class="product-quantity">
+                <!-- <div class="product-quantity">
                   <div class="product-quantity__control">
                     <div class="product-quantity__control-min">−</div>
                     <div class="product-quantity__control-num">200</div>
@@ -233,9 +240,9 @@
                     </div>
                   </button>
                 </div>
-              </div>
+              </div> -->
               <!-- Карточка 3 -->
-              <div class="product-cart">
+              <!-- <div class="product-cart">
                 <div class="product-cart__block">
                   <button id="selectCard-1" class="checkbox_active"></button>
                   <img src="./src/img/product3.png" />
@@ -277,19 +284,9 @@
                   </div>
                   <button class="product-price__full-price">
                     <span id="full-price">950 сом</span>
-                    <div class="tooltip">
-                      <div>
-                        <span>Скидка 55%</span>
-                        <p>- 300 сом</p>
-                      </div>
-                      <div>
-                        <span>Скидка покупателя 10%</span>
-                        <p>- 30 сом</p>
-                      </div>
-                    </div>
                   </button>
                 </div>
-              </div>
+              </div> -->
               <!-- Конец карточек -->
             </div>
           </div>
@@ -307,9 +304,9 @@
             <div class="line"></div>
 
             <!-- Карточки товаров -->
-            <div class="cart-inactive-item__cards">
+            <div id="inactiveCarts" class="cart-inactive-item__cards">
               <!-- Карточка 1-->
-              <div class="product-cart product-cart-disassembled">
+              <!-- <div class="product-cart product-cart-disassembled">
                 <div class="product-cart__block">
                   <img src="./src/img/product1.png" />
                 </div>
@@ -330,55 +327,8 @@
                 </div>
 
                 <div class="product-price"></div>
-              </div>
-              <!-- 2 -->
-              <div class="product-cart product-cart-disassembled">
-                <div class="product-cart__block">
-                  <img src="./src/img/product2.png" />
-                </div>
-
-                <div class="product-discription">
-                  <h4>
-                    Силиконовый чехол картхолдер (отверстия) для карт,
-                    прозрачный кейс бампер на Apple iPhone XR, MobiSafe
-                  </h4>
-                  <div class="product-discription__spec">
-                    <p>Цвет: прозрачный</p>
-                  </div>
-                </div>
-
-                <div class="product-quantity">
-                  <div class="product-quantity__btn">
-                    <button><img src="./src/img/heart.svg" /></button>
-                    <button><img src="./src/img/bin.svg" /></button>
-                  </div>
-                </div>
-
-                <div class="product-price"></div>
-              </div>
-              <!-- 3 -->
-              <div class="product-cart product-cart-disassembled">
-                <div class="product-cart__block">
-                  <img src="./src/img/product3.png" />
-                </div>
-
-                <div class="product-discription">
-                  <h4>
-                    Карандаши цветные Faber-Castell "Замок", набор 24 цвета,
-                    заточенные, шестигранные, Faber-Castell
-                  </h4>
-                </div>
-
-                <div class="product-quantity">
-                  <div class="product-quantity__btn">
-                    <button><img src="./src/img/heart.svg" /></button>
-                    <button><img src="./src/img/bin.svg" /></button>
-                  </div>
-                </div>
-
-                <div class="product-price"></div>
-              </div>
-
+              </div> -->
+            
               <!-- Конец карточек -->
             </div>
           </div>
@@ -386,14 +336,14 @@
           <!-- Cпособ доставки -->
           <div class="delivery">
             <div class="delivery__method">
-              <h2>Способ доставки</h2>
-              <button>Изменить</button>
+              <h2 class="title-h2">Способ доставки</h2>
+              <button class="title-h4-accent">Изменить</button>
             </div>
 
             <div class="delivery__info">
               <div class="meet">
                 <div class="meet__title">
-                  <p class="tooltip">Доставка курьером</p>
+                  <p class="dNone">Доставка курьером</p>
                   <p>Пункт выдачи</p>
                 </div>
                 <div class="meet__text">
@@ -415,7 +365,7 @@
 
               <div class="arrival-date">
                 <div class="arrival-date__kit">
-                  <p>5—6 февраля</p>
+                  <p class="text-p-bold">5—6 февраля</p>
                   <div class="arrival-date__kit-items">
                     <div class="arrival-date__kit-item">
                       <img src="./src/img/product1.png">
@@ -431,7 +381,7 @@
                   </div>
                 </div>
                 <div class="arrival-date__kit">
-                  <p>7—8 февраля</p>
+                  <p class="text-p-bold">7—8 февраля</p>
                   <div class="arrival-date__kit-items">
                     <div class="arrival-date__kit-item">
                       <img src="./src/img/product2.png">
@@ -444,9 +394,9 @@
 
             <div class="delivery__notice">
               <img src="./src/img/greenTick.svg" />
-              <p>
+              <p class="text-p">
                 Обратная доставка товаров на cклад при отказе —
-                <span>бесплатно</span>
+                <span class ="text-span-green">бесплатно</span>
               </p>
             </div>
           </div>
@@ -497,9 +447,7 @@
                   <input placeholder="ИНН">
                   <p>Для таможенного оформления</p>
                 </div>
-
               </div>
-
           </div>
         </div>
 

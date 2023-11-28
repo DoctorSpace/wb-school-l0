@@ -60,13 +60,48 @@
     display: flex;
     flex-direction: row;
     gap: 16px;
+    align-items: center;
   
     justify-content: end;
   }
   
   .product-quantity__btn button {
     border: 0;
-  
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     padding: 0;
     background-color: var(--Transparent);
+  }
+
+  .product-quantity__btn-heart{
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-image: url("../../img/heart.svg");
+  }
+
+  .product-quantity__btn-heart-activ{
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-image: url("../../img/heart-activ.svg");
+  }
+
+  .product-quantity__btn-heart:hover{
+    background-image: url("../../img/heart-activ.svg");
+  }
+
+  .product-quantity__btn-bin{
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-image: url("../../img/bin.svg");
+  }
+
+  .product-quantity__btn-bin:hover{
+    background-image: url("../../img/bin-activ.svg");
   }

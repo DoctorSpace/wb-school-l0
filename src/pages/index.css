@@ -1,7 +1,7 @@
 /* Vendor */
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonst.css);
-
+@import url(../vendor/font-sizes.css);
 
 /* --Blocks-- */
 
@@ -20,7 +20,6 @@
 @import url(../blocks/product-discription/product-discription.css);
 @import url(../blocks/product-quantity/product-quantity.css);
 @import url(../blocks/product-price/product-price.css);
-@import url(../blocks/tooltip/tooltip.css);
 
 /* Cart-Mobile */
 @import url(../blocks/product-cart/product-cart-mobile.css);
@@ -63,3 +62,4 @@
 @import url(../blocks/UI/checkbox/checkbox.css);
 @import url(../blocks/UI/text/price.css);
 @import url(../blocks/UI/line/line.css);
+@import url(../blocks/UI/dialog/dialog.css);

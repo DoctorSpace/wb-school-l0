@@ -14,13 +14,6 @@
 
 .arrival-date__kit p {
   width: 153px;
-
-  color: var(--BlackText);
-  font-family: Segoe UI;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
 }
 
 .arrival-date__kit-items {

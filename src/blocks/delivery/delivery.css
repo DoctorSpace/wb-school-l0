@@ -14,17 +14,6 @@
   justify-content: space-between;
 }
 
-.delivery__method h2 {
-  color: var(--BlackText);
-
-  font-family: Segoe UI;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 32px;
-  letter-spacing: -0.24px;
-}
-
 .delivery__method button {
   border: 0;
   background-color: var(--Transparent);
@@ -33,14 +22,6 @@
 
   justify-self: end;
   align-self: end;
-
-  color: var(--Accent);
-
-  font-family: Segoe UI;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
 }
 
 .delivery__info {
@@ -59,22 +40,4 @@
   align-items: center;
 
   gap: 8px;
-}
-
-.delivery__notice p {
-  font-family: Segoe UI;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
-}
-
-.delivery__notice span {
-  color: var(--Green);
-
-  font-family: Segoe UI;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
 }

@@ -1,7 +1,7 @@
 .product-cart {
   display: flex;
   flex-direction: row;
-  margin-top: 9px;
+  margin-top: 10px;
 }
 
 .product-cart__block {

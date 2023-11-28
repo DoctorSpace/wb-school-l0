@@ -6,30 +6,10 @@
   gap: 8px;
 }
 
-.product-discription h4 {
-  color: var(--BlackText);
-
-  cursor: pointer;
-  font-family: Segoe UI;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-
 .product-discription__spec {
   display: flex;
   flex-direction: row;
   gap: 18px;
-}
-
-.product-discription__spec p {
-  color: var(--BlackText);
-  font-family: Segoe UI;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
 }
 
 
@@ -39,19 +19,25 @@
   gap: 1px;
 }
 
-.product-discription__org p {
-  color: var(--Gray);
-
-  font-family: Segoe UI;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px; /* 123.077% */
-}
-
 .product-discription__org-icon {
+  justify-content: start;
+
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 7px;
+}
+
+.product-discription__orgnInfo{
+  position: relative;
+  cursor: pointer;
+  justify-content: start;
+
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.product-discription__orgnInfo img:hover + dialog {
+  display: flex;
 }
