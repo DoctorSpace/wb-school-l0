@@ -47,7 +47,7 @@ export const products = [
     },
     quantity: 200,
     quantityRemains: 0,
-    avalibleOnFastWarehouse: 184,
+    avalibleOnFastWarehouse: 400,
     price: 10500.235,
     fullPrice: 11500.235,
     discountSpec: {

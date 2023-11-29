@@ -1,0 +1,9 @@
+.arrow {
+  /* transform: rotate(180deg); */
+  cursor: pointer;
+}
+
+.arrow-activ {
+  cursor: pointer;
+  transform: rotate(180deg);
+}

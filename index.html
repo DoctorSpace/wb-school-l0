@@ -51,7 +51,7 @@
                 <button id="selectAllbtn" class="checkbox_active"></button>
                 <p>Выбрать все</p>
               </div>
-              <img src="./src/img/arrow.svg" />
+              <img id="ocAllSelectedActiv" class="arrow" src="./src/img/arrow.svg" />
             </div>
             <div class="line"></div>
             <!-- Карточки товаров -->
@@ -296,9 +296,9 @@
             <!-- Поле Выбрать всё -->
             <div class="cart-inactive-item__allSelected">
               <div class="cart-inactive-item__allSelected-text">
-                <p>Отсутствуют · 3 товара</p>
+                <p id="allSelectedInactive">Отсутствуют · 3 товара</p>
               </div>
-              <img src="./src/img/arrow.svg" />
+              <img id="ocAllSelectedInactive" class="arrow" src="./src/img/arrow.svg" />
             </div>
 
             <div class="line"></div>
@@ -461,15 +461,28 @@
           <div class="total-price">
             <div class="total-price__actual">
               <h2>Итого</h2>
-              <h2>2 101 063<span> сом</span></h2>
+              <div class="total-price_row">
+                <h2 id="totalPrice">2 101 063</h2>
+                <span>сом</span>
+              </div>
             </div>
             <div class="total-price__count">
-              <p>203 товара</p>
-              <p>2 302 048 сом</p>
+              <div class="total-price_row">
+                <p id="totalCounts">203</p>
+                <p>товара</p>
+              </div>
+              <div class="total-price_row">
+                <p id="totalPriceCounts">2 302 048</p>
+                <p>сом</p>
+              </div>
             </div>
             <div class="total-price__discount">
               <p>Скидка</p>
-              <p>−200 985 сом</p>
+              <div class="total-price_row">
+                <p id="totalDiscount">−200 985</p>
+                <p>сом</p>
+              </div>
+
             </div>
             <div class="total-price__sale">
               <p>Доставка</p>

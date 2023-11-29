@@ -3,6 +3,16 @@
     flex-direction: column;
 }
 
+.total-price_row{
+    display: flex; 
+    gap:4px;
+
+    justify-content: center;
+    align-items: end;
+
+}
+
+
 .total-price__actual{
     margin-bottom: 8px;
 }

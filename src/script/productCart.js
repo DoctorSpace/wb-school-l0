@@ -16,7 +16,7 @@ export function setCartProductDesctop(product) {
     activProduct.innerHTML = `
       <div class="product-cart">
       <div class="product-cart__block">
-        <button id="selectCard-1" class="${
+        <button id="selectCard-${product.id}" class="${
           product.isSelected ? "checkbox_active" : "checkbox_inactive"
         }"></button>
         <img src="./src/img/${product.img}.png" />
@@ -28,12 +28,12 @@ export function setCartProductDesctop(product) {
             ? `<div class="product-discription__spec">
           ${
             product.specification?.color
-              ? `<p class="text-p-gray" id="spec">Цвет: ${product.specification.color}</p>`
+              ? `<p class="text-p" id="spec">Цвет: ${product.specification.color}</p>`
               : ""
           }
           ${
             product.specification?.size
-              ? `<p class="text-p-gray">Размер: ${product.specification.size}</p>`
+              ? `<p class="text-p">Размер: ${product.specification.size}</p>`
               : ""
           } </div>`
             : ""
@@ -56,9 +56,9 @@ export function setCartProductDesctop(product) {
       
       <div class="product-quantity">
         <div class="product-quantity__control">
-          <div class="product-quantity__control-min">−</div>
-          <div class="product-quantity__control-num">${product.quantity}</div>
-          <div class="product-quantity__control-max">+</div>
+          <div id="control-min-${product.id}" class="product-quantity__control-min ${product.quantity >= product.quantityRemains ? 'product-quantity__control-min_activ':''}">−</div>
+          <div id="control-num-${product.id}" class="product-quantity__control-num">${product.quantity}</div>
+          <div id="control-max-${product.id}" class="product-quantity__control-max ${product.quantity < product.avalibleOnFastWarehouse ? 'product-quantity__control-max_activ':''}">+</div>
         </div>
         ${quantityRemains}
         <div class="product-quantity__btn">
@@ -67,19 +67,19 @@ export function setCartProductDesctop(product) {
         ? "product-quantity__btn-heart-activ"
         : "product-quantity__btn-heart"
     }"></button>
-          <button class="product-quantity__btn-bin"></button>
+          <button id="bin-${product.id}" class="product-quantity__btn-bin"></button>
         </div>
       </div>
       
       <div class="product-price">
         <div class="product-price__actual-price">
-          <p id="actualPrice1" class="${product.id==2? 'title-h4-bold' : 'title-h3'}">${numberWithSpaces(
+          <p id="actualPrice-${product.id}" class="${product.id==2? 'title-h4-bold' : 'title-h3'}">${numberWithSpaces(
             actualPriceForOne
           )}</p>
           <span class="text-span">сом</span>
         </div>
         <button class="product-price__full-price">
-          <span id="full-price">${numberWithSpaces(fullPriceForsOne)} сом</span>
+          <span id="fullPrice-${product.id}">${numberWithSpaces(fullPriceForsOne)} сом</span>
           
           <dialog class="dialog-price">
           <div class="dialog-price__sale">
@@ -134,7 +134,7 @@ export function setCartProductDesctop(product) {
         ? "product-quantity__btn-heart-activ"
         : "product-quantity__btn-heart"
     }"></button>
-          <button class="product-quantity__btn-bin"></button>
+          <button id="bin-${product.id}" class="product-quantity__btn-bin"></button>
       </div>
     </div>
 
