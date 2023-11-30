@@ -3,7 +3,7 @@ import { numberWithSpaces } from "../script/numberWithSpaces.js";
 export function setCartProductDesctop(product) {
   if (product.inStock) {
     let quantityRemains =
-      product.quantityRemains != 0
+      product.quantityRemains != 0 && product.quantityRemains < 10
         ? `<p>Осталось ${product.quantityRemains} шт.</p>`
         : ``;
 

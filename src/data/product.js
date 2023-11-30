@@ -46,7 +46,7 @@ export const products = [
         "129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34",
     },
     quantity: 200,
-    quantityRemains: 0,
+    quantityRemains: 184,
     avalibleOnFastWarehouse: 400,
     price: 10500.235,
     fullPrice: 11500.235,

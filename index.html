@@ -27,7 +27,7 @@
             <p>Профиль</p>
           </button>
           <button class="header__action-basket">
-            <div class="header__action-basket-count">1</div>
+            <div id="countActivProducts" class="header__action-basket-count">3</div>
             <img src="./src/img/basket.svg" alt="Basket" />
             <p>Корзина</p>
           </button>
@@ -47,9 +47,12 @@
           <div class="cart-activ-item">
             <!-- Поле Выбрать всё -->
             <div class="cart-activ-item__allSelected">
-              <div class="cart-activ-item__allSelected-text">
-                <button id="selectAllbtn" class="checkbox_active"></button>
-                <p>Выбрать все</p>
+              <div>
+                <p id="ocAllSelectedActivTextadd" class="dNone text-p-bold"></p>
+                <div id="ocAllSelectedActivText" class="cart-activ-item__allSelected-text">
+                  <button id="selectAllbtn" class="checkbox_active"></button>
+                  <p>Выбрать все</p>
+                </div>
               </div>
               <img id="ocAllSelectedActiv" class="arrow" src="./src/img/arrow.svg" />
             </div>
@@ -181,155 +184,20 @@
                   </div>
                 </div>
               </div> -->
-
-              <!-- Карточка 2 -->
-              <!-- <div class="product-cart">
-                <div class="product-cart__block">
-                  <button id="selectCard-1" class="checkbox_active"></button>
-                  <img src="./src/img/product2.png" />
-                </div>
-
-                <div class="product-discription">
-                  <h4>
-                    Силиконовый чехол картхолдер (отверстия) для карт,
-                    прозрачный кейс бампер на Apple iPhone XR, MobiSafe
-                  </h4>
-                  <div class="product-discription__spec">
-                    <p>Цвет: прозрачный</p>
-                  </div>
-                  <div class="product-discription__org">
-                    <p>Коледино WB</p>
-                    <div class="product-discription__org-icon">
-                      <p>OOO Мегапрофстиль</p>
-                      <img src="./src/img/info.svg" />
-                    </div>
-                  </div>
-                </div> -->
-
-                <!-- Блок добавления -->
-                <!-- <div class="product-quantity">
-                  <div class="product-quantity__control">
-                    <div class="product-quantity__control-min">−</div>
-                    <div class="product-quantity__control-num">200</div>
-                    <div class="product-quantity__control-max">+</div>
-                  </div>
-                  <div class="product-quantity__btn">
-                    <button><img src="./src/img/heart.svg" /></button>
-                    <button><img src="./src/img/bin.svg" /></button>
-                  </div>
-                </div>
-
-                <div class="product-price">
-                  <div class="product-price__actual-price">
-                    <p class="price-texe-h4">
-                      2 100 047
-                      <span>сом</span>
-                    </p>
-                  </div>
-                  <button class="product-price__full-price">
-                    <span id="full-price">2 300 047 сом</span>
-                    <div class="tooltip">
-                      <div>
-                        <span>Скидка 55%</span>
-                        <p>- 300 сом</p>
-                      </div>
-                      <div>
-                        <span>Скидка покупателя 10%</span>
-                        <p>- 30 сом</p>
-                      </div>
-                    </div>
-                  </button>
-                </div>
-              </div> -->
-              <!-- Карточка 3 -->
-              <!-- <div class="product-cart">
-                <div class="product-cart__block">
-                  <button id="selectCard-1" class="checkbox_active"></button>
-                  <img src="./src/img/product3.png" />
-                </div>
-
-                <div class="product-discription">
-                  <h4>
-                    Карандаши цветные Faber-Castell "Замок", набор 24 цвета,
-                    заточенные, шестигранные, Faber-Castell
-                  </h4>
-                  <div class="product-discription__org">
-                    <p>Коледино WB</p>
-                    <div class="product-discription__org-icon">
-                      <p>OOO Вайлдберриз</p>
-                      <img src="./src/img/info.svg" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="product-quantity">
-                  <div class="product-quantity__control">
-                    <div class="product-quantity__control-min">−</div>
-                    <div class="product-quantity__control-num">2</div>
-                    <div class="product-quantity__control-max">+</div>
-                  </div>
-                  <p>Осталось 2 шт.</p>
-                  <div class="product-quantity__btn">
-                    <button><img src="./src/img/heart.svg" /></button>
-                    <button><img src="./src/img/bin.svg" /></button>
-                  </div>
-                </div>
-
-                <div class="product-price">
-                  <div class="product-price__actual-price">
-                    <p class="price-texe-h3">
-                      494
-                      <span>сом</span>
-                    </p>
-                  </div>
-                  <button class="product-price__full-price">
-                    <span id="full-price">950 сом</span>
-                  </button>
-                </div>
-              </div> -->
               <!-- Конец карточек -->
             </div>
           </div>
 
           <!-- Главное поле НЕАКТИВНЫХ товаров -->
           <div class="cart-inactive-item">
-            <!-- Поле Выбрать всё -->
             <div class="cart-inactive-item__allSelected">
               <div class="cart-inactive-item__allSelected-text">
                 <p id="allSelectedInactive">Отсутствуют · 3 товара</p>
               </div>
               <img id="ocAllSelectedInactive" class="arrow" src="./src/img/arrow.svg" />
             </div>
-
             <div class="line"></div>
-
-            <!-- Карточки товаров -->
             <div id="inactiveCarts" class="cart-inactive-item__cards">
-              <!-- Карточка 1-->
-              <!-- <div class="product-cart product-cart-disassembled">
-                <div class="product-cart__block">
-                  <img src="./src/img/product1.png" />
-                </div>
-
-                <div class="product-discription">
-                  <h4>Футболка UZcotton мужская</h4>
-                  <div class="product-discription__spec">
-                    <p>Цвет: белый</p>
-                    <p>Размер: 56</p>
-                  </div>
-                </div>
-
-                <div class="product-quantity">
-                  <div class="product-quantity__btn">
-                    <button><img src="./src/img/heart.svg" /></button>
-                    <button><img src="./src/img/bin.svg" /></button>
-                  </div>
-                </div>
-
-                <div class="product-price"></div>
-              </div> -->
-            
-              <!-- Конец карточек -->
             </div>
           </div>
 
@@ -364,28 +232,29 @@
               </div>
 
               <div class="arrival-date">
-                <div class="arrival-date__kit">
+                <div id="arrivalKit-1" class="arrival-date__kit">
                   <p class="text-p-bold">5—6 февраля</p>
                   <div class="arrival-date__kit-items">
                     <div class="arrival-date__kit-item">
                       <img src="./src/img/product1.png">
+                      <span id="arrivalProduct1-kit1">1</span>
                     </div class="arrival-date__kit-items">
                     <div class="arrival-date__kit-item">
                       <img src="./src/img/product2.png">
-                      <span>184</span>
+                      <span id="arrivalProduct2-kit1">184</span>
                     </div>
                     <div class="arrival-date__kit-item">
                       <img src="./src/img/product3.png">
-                      <span>2</span>
+                      <span id="arrivalProduct3-kit1">2</span>
                     </div>
                   </div>
                 </div>
-                <div class="arrival-date__kit">
+                <div id="arrivalKit-2" class="arrival-date__kit">
                   <p class="text-p-bold">7—8 февраля</p>
                   <div class="arrival-date__kit-items">
                     <div class="arrival-date__kit-item">
                       <img src="./src/img/product2.png">
-                      <span>16</span>
+                      <span id="arrivalProduct3-kit2">16</span>
                     </div>
                   </div>
                 </div>
