@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/pages/index.css" />
   </head>
-  <body>
+  <body id="body">
     <div class="root">
       <header>
         <div class="header__menu">
@@ -38,6 +38,26 @@
         </div>
       </header>
 
+      <div class="overlay dNone">
+        <div class="modalWindows">
+          <div class="modalWindows__title">
+            <h3 id="modalTitle" class="title-h3">Способ доставки</h3>
+            <img id="searchClose" src="./src/img/search-close.svg">
+          </div>
+
+          <div id="buttonDeliveryBlock" class="modalWindows__settings">
+            <button id="setPointDelivery" class="text-p-bold modalWindowsButton">В пункт выдачи</button>
+            <button id="setCourierDelivery" class="text-p-bold modalWindowsButton_activ">Курьером</button>
+          </div>
+
+          <h4 id="titleMyAddresses" class="title-h4-bold">Мой адреса</h4>
+          <div id="content" class="modalWindows__content">
+
+          </div>
+    
+          <button id="acceptModal" class="accentButton title-h4-bold">Выбрать</button>
+        </div>
+      </div>
 
       <section>
         <div class="cart">
@@ -205,7 +225,7 @@
           <div class="delivery">
             <div class="delivery__method">
               <h2 class="title-h2">Способ доставки</h2>
-              <button class="title-h4-accent">Изменить</button>
+              <button id="deliveryLocationBtn1" class="title-h4-accent">Изменить</button>
             </div>
 
             <div class="delivery__info">
@@ -215,13 +235,11 @@
                   <p>Пункт выдачи</p>
                 </div>
                 <div class="meet__text">
-                  <p>
-                    Бишкек, улица Ахматбека Суюмбаева, 12/1
-                  </p>
-                  <div class="meet__text-time">
+                  <p id="deliveryAdress">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+                  <div id="deliveryPointAdresses" class="meet__text-time">
                     <img src="./src/img/star.svg"/>
-                    <p>4.99</p>
-                    <p>Ежедневно с 10 до 21 </p>
+                    <p id="deliveryRating">4.99</p>
+                    <p id="deliveryTime">Ежедневно с 10 до 21 </p>
                   </div>
                 </div>
               </div>
@@ -235,15 +253,15 @@
                 <div id="arrivalKit-1" class="arrival-date__kit">
                   <p class="text-p-bold">5—6 февраля</p>
                   <div class="arrival-date__kit-items">
-                    <div class="arrival-date__kit-item">
+                    <div id="arrivalItem-1" class="arrival-date__kit-item">
                       <img src="./src/img/product1.png">
                       <span id="arrivalProduct1-kit1">1</span>
                     </div class="arrival-date__kit-items">
-                    <div class="arrival-date__kit-item">
+                    <div id="arrivalItem-2" class="arrival-date__kit-item">
                       <img src="./src/img/product2.png">
                       <span id="arrivalProduct2-kit1">184</span>
                     </div>
-                    <div class="arrival-date__kit-item">
+                    <div id="arrivalItem-3" class="arrival-date__kit-item">
                       <img src="./src/img/product3.png">
                       <span id="arrivalProduct3-kit1">2</span>
                     </div>
@@ -252,9 +270,9 @@
                 <div id="arrivalKit-2" class="arrival-date__kit">
                   <p class="text-p-bold">7—8 февраля</p>
                   <div class="arrival-date__kit-items">
-                    <div class="arrival-date__kit-item">
+                    <div id="arrivalItem-2" class="arrival-date__kit-item">
                       <img src="./src/img/product2.png">
-                      <span id="arrivalProduct3-kit2">16</span>
+                      <span id="arrivalProduct2-kit2">16</span>
                     </div>
                   </div>
                 </div>
@@ -274,13 +292,13 @@
           <div class="payment">
             <div class="payment__method">
               <h2>Способ оплаты</h2>
-              <button>Изменить</button>
+              <button id="setPaymentCardBtn1">Изменить</button>
             </div>
 
             <div class="payment__card">
-              <img src="./src/img/cards/mir.svg">
-              <p>1234 56•• •••• 1234</p>
-              <p>01/30</p>
+              <img id="paymentSystemIcon1" src="src/img/cards/mir.svg">
+              <p id="paymentCardNumber1">4000 56•• •••• 1234</p>
+              <p id="cardtPayment1">01/29</p>
             </div>
 
             <p class="payment__info">Спишем оплату с карты при получении</p>
@@ -289,33 +307,36 @@
           <!-- Получатель -->
           <div class="recipient">
             <h2>Получатель</h2>
-
-              
+            
             <div class="recipient__name">
-                <div>
-                  <span>Имя</span>
-                  <input placeholder="Имя">
-                </div>
-                <div>
-                  <span>Фамилия</span>
-                  <input placeholder="Фамилия">
-                </div>
+              <div>
+                <span id="spanFirstname">Имя</span>
+                <input id="inputFirstname" placeholder="Имя">
+                <p id="pFirstname"">Проверьте имя</p>
               </div>
-
-              <div class="recipient__contacts">
-                <div>
-                  <span>Почта</span>
-                  <input placeholder="Почта">
-                </div>
-                <div>
-                  <span>Телефон</span>
-                  <input placeholder="Телефон">
-                </div>
-                <div>
-                  <span>ИНН</span>
-                  <input placeholder="ИНН">
-                  <p>Для таможенного оформления</p>
-                </div>
+              <div>
+                <span id="spanSurname">Фамилия</span>
+                <input id="inputSurname" placeholder="Фамилия">
+                <p id="pSurname">Проверьте фамилию</p>
+              </div>
+            </div>
+          
+            <div class="recipient__contacts">
+              <div>
+                <span id="spanMail">Почта</span>
+                <input id="inputMail" placeholder="Почта">
+                <p id="pMail">Проверьте адрес электронной почты</p>
+              </div>
+              <div>
+                <span id="spanNumber">Телефон</span>
+                <input id="inputNumber" placeholder="Телефон">
+                <p id="pNumber">Формат: +9 999 999 99 99</p>
+              </div>
+              <div>
+                <span id="spanIIN">ИНН</span>
+                <input id="inputIIN" placeholder="ИНН">
+                <p id="pIIN">Для таможенного оформления</p>
+              </div>
               </div>
           </div>
         </div>
@@ -363,10 +384,10 @@
           <div class="final-delivery">
             <div class="final-delivery__changes">
               <h4>Доставка в пункт выдачи</h4>
-              <img src="./src/img/pen.svg">
+              <img id="deliveryLocationBtn2" src="./src/img/pen.svg">
             </div>
             <div class="final-delivery__adress">
-              <p>Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+              <p id="totalDeliveryAdress">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
               <span>5–8 фев</span>
             </div>
           </div>
@@ -381,22 +402,22 @@
           <div class="result-payment">
             <div class="result-payment__changes">
               <h4>Оплата картой</h4>
-              <img src="./src/img/pen.svg">
+              <img id="setPaymentCardBtn2" src="./src/img/pen.svg">
             </div>
   
             <div class="result-payment__card">
-              <img src="./src/img/cards/visa.svg">
-              <p>1234 12•• •••• 1234</p>
+              <img id="paymentSystemIcon2" src="src/img/cards/mir.svg">
+              <p id="paymentCardNumber2">4000 56•• •••• 1234</p>
             </div>
           </div>
 
           <!-- Галочка списать оплату сейчас -->
           <div class="cart-result__writeOffPayment">
-            <div class="cart-result__writeOffPayment-btn">
-              <button id="writeOffPayment"><img src="./src/img/checkboxOFF.svg"></button>
-              <label for="writeOffPayment">Списать оплату сразу</label>
+            <div id="writeOffPayment" class="cart-result__writeOffPayment-btn">
+              <button><img id="writeOffPaymentIMG" src="./src/img/checkboxOFF.svg"></button>
+              <label for="writeOffPaymentBTN">Списать оплату сразу</label>
             </div>
-            <p>Спишем оплату с карты при получении</p>
+            <p id="writeOffPaymentINFO">Спишем оплату с карты при получении</p>
           </div>
 
           <button id="OrderBtn" class="cart-result__button">Заказать</button>

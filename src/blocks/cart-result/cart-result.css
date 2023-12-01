@@ -52,6 +52,9 @@
 .cart-result__writeOffPayment-btn {
   display: flex;
   flex-direction: row;
+
+  height: 22px;
+
   gap: 9px;
 
   align-items: center;
@@ -69,6 +72,14 @@
   border: 0;
   padding: 0;
   background-color: var(--Transparent);
+}
+
+#writeOffPayment{
+  height: 22px;
+}
+
+.cart-result__writeOffPayment-btn label {
+  cursor: pointer;
 }
   
 

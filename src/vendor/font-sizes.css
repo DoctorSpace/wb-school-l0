@@ -38,6 +38,7 @@
     line-height: 24px;
 }
 
+
 .title-h4-bold{
     color: var(--BlackText);
 
@@ -81,6 +82,16 @@
     line-height: 16px;
 }
 
+.text-p-big{
+    color: var(--BlackText);
+
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
 .text-p-gray{
     color: var(--Gray);
 
@@ -111,6 +122,16 @@
 
 .text-span-green{
     color: var(--Green);
+    font-family: Segoe UI;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.text-span-gray{
+    color: var(--Gray);
+
     font-family: Segoe UI;
     font-size: 13px;
     font-style: normal;

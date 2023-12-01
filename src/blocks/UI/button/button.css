@@ -1,0 +1,17 @@
+.accentButton{
+    cursor: pointer;
+    
+    margin-top: 16px;
+    color: var(--WhiteText);
+
+    display: flex;
+    height: 44px;
+    padding: 0px 48px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 0;
+    background: var(--Accent);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+}

@@ -44,7 +44,7 @@
 /* Recipient */
 @import url(../blocks/recipient/recipient.css);
 
-/* 000 */
+
 
 /* cart-result */
 @import url(../blocks/cart-result/cart-result.css);
@@ -57,6 +57,8 @@
 /* watermark */
 @import url(../blocks/watermark/watermark.css);
 
+/* modalWindows */
+@import url(../blocks/modalWindow/modalWindows.css);
 
 /* UI */
 @import url(../blocks/UI/checkbox/checkbox.css);
@@ -64,3 +66,4 @@
 @import url(../blocks/UI/line/line.css);
 @import url(../blocks/UI/dialog/dialog.css);
 @import url(../blocks/UI/arrow/arrow.css);
+@import url(../blocks/UI/button/button.css);

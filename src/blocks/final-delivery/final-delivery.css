@@ -6,6 +6,10 @@
     margin-top: 23px;
 }
 
+.final-delivery__changes img{
+    cursor: pointer;
+}
+
 .final-delivery__adress{
     margin-top: 6px;
     display: flex;

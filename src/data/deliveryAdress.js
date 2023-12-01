@@ -19,9 +19,10 @@ export const deliveryAdressData = {
       isSelected: false,
     },
   ],
+
   pointAdresses: [
     {
-      id: 4,
+      id: 1,
       type: "point",
       adress: "г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д. 67/1",
       rating: "4.99",
@@ -29,7 +30,7 @@ export const deliveryAdressData = {
       isSelected: false,
     },
     {
-      id: 5,
+      id: 2,
       type: "point",
       adress: "Бишкек, улица Ахматбека Суюмбаева, 12/1",
       rating: "4.97",
@@ -37,7 +38,7 @@ export const deliveryAdressData = {
       isSelected: false,
     },
     {
-      id: 6,
+      id: 3,
       type: "point",
       adress: "Бишкек, улица Табышалиева, 57",
       rating: "4.88",

@@ -29,6 +29,7 @@ export const products = [
     isSelected: true,
     inStock: true,
     isFavorit: false,
+    isDeleted: false,
   },
   {
     id: 2,
@@ -59,6 +60,7 @@ export const products = [
     isSelected: true,
     inStock: true,
     isFavorit: false,
+    isDeleted: false,
   },
   {
     id: 3,
@@ -86,6 +88,7 @@ export const products = [
     isSelected: true,
     inStock: true,
     isFavorit: false,
+    isDeleted: false,
   },
   {
     id: 4,
@@ -117,6 +120,7 @@ export const products = [
     isSelected: true,
     inStock: false,
     isFavorit: false,
+    isDeleted: false,
   },
   {
     id: 5,
@@ -147,6 +151,7 @@ export const products = [
     isSelected: true,
     inStock: false,
     isFavorit: false,
+    isDeleted: false,
   },
   {
     id: 6,
@@ -174,5 +179,6 @@ export const products = [
     isSelected: true,
     inStock: false,
     isFavorit: false,
+    isDeleted: false,
   },
 ];

@@ -46,6 +46,8 @@
     line-height: 24px;
 }
 
+/* Name */
+
 .recipient__name{
     margin-top: 12px;
     display: flex;
@@ -54,9 +56,34 @@
     max-width: 700px;
 }
 
+.recipient__name span{
+    font-size: 13px;
+    line-height: 1.23077;
+    font-weight: 400;
+    opacity: 0;
+    color: var(--Gray);
+    transition: opacity .3s ease;
+}
+
+.recipient__name p{
+    margin-top: 3px;
+
+    align-self: stretch;
+    color: var(--BlackText);
+    font-family: Segoe UI;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 116.667% */
+}
+
 .recipient__name div{
     width: 100%;
 }
+
+
+
+/* Contacts */
 
 .recipient__contacts{
     margin-top: 17px;
@@ -70,8 +97,16 @@
     width: 100%;
 }
 
-.recipient__contacts p{
+.recipient__contacts span{
+    font-size: 13px;
+    line-height: 1.23077;
+    font-weight: 400;
+    opacity: 0;
+    color: var(--Gray);
+    transition: opacity .3s ease;
+}
 
+.recipient__contacts p{
     margin-top: 3px;
 
     align-self: stretch;
