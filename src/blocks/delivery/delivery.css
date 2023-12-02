@@ -38,6 +38,24 @@
 .delivery__notice {
   display: flex;
   align-items: center;
-
   gap: 8px;
+}
+
+.delivery__notice-Info{
+
+  position: relative;
+
+  cursor: pointer;
+  justify-content: start;
+
+  display: flex;
+  flex-direction: row;
+
+  gap: 2px;
+  align-self: center;
+}
+
+
+.delivery__notice-Info span:hover + dialog {
+  display: flex;
 }

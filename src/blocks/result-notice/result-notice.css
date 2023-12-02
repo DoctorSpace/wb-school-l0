@@ -1,31 +1,28 @@
-.result-notice{
-    padding: 8px 8px 12px;
-    margin-top: 13px;
+.result-notice {
+  padding: 8px 8px 12px;
+  margin-top: 13px;
 
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    background-color: var(--BackgroundSmoky);
-    border-radius: 8px;
-    gap:8px;
+  background-color: var(--BackgroundSmoky);
+  border-radius: 8px;
+  gap: 8px;
 }
 
-.result-notice p{
-    color: var(--BlackText);
 
-    font-family: Segoe UI;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px;
+.result-notice-Info {
+  position: relative;
+
+  cursor: pointer;
+  justify-content: start;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-self: center;
 }
 
-.result-notice span{
-    color: var(--Green);
-
-    font-family: Segoe UI;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px;
+.result-notice-Info p:hover + dialog {
+  display: flex;
 }

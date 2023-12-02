@@ -39,6 +39,11 @@ header button {
   gap: 16px;
 }
 
+.header__menu button img{
+  height: auto;
+  width: auto;
+  content: url(../../img/menuIcon.svg);
+}
 
 .header__menu button {
   display: flex;
@@ -246,29 +251,40 @@ header button {
 
 
   .header__menu button{
+    width: 24px;
     border: 0;
   }
 
+  .header__menu button img{
+    height: 6.75vw;
+    content: url(../../img/menuIconMobile.svg);
+  }
+
   header{
-    padding: 0 13px;
+    height: 18vw;
+    padding: 0;
+    margin: 0 4.0625vw;
+    gap: 4.9vw;
     justify-content: space-between;
   }
   
   header h1 {
+    display: block;
+
     color: var(--WhiteText);
     font-family: Segoe UI;
-    font-size: 9.2vw;
-    font-style: normal;
     font-weight: 600;
-    letter-spacing: 1px;
-  
     font-variant: all-small-caps;
     text-align: center;
-
-    padding: 11px 4px 21px 4px;
-
+    font-style: normal;
+    text-transform: uppercase;
     width: auto;
-    margin: 0 16px;
+
+    font-size: 7.38vw;
+    letter-spacing: 1.2vw;
+    line-height: 7.5vw;
+    margin: 3.4375vw -0.75vw 6.5625vw;
+    white-space: nowrap;
   }
 
   .header__action{
@@ -290,14 +306,12 @@ header button {
     justify-content: center;
     align-items: center;
 
-    width: 48px;
-    height: 48px;
+    width: 24px;
   }
 
   .header__action-search img{
     padding: 0;
-    width: 28px;
-    height: 28px;
+    height: 6.75vw;
   }
   
 }

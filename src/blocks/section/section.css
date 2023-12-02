@@ -13,5 +13,6 @@ section{
 @media (max-width: 768px) {
     section{
         display: block;
+        padding: 14px 16px 33px;
     }
 }

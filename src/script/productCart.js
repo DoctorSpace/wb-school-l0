@@ -1,6 +1,7 @@
 import { numberWithSpaces } from "../script/numberWithSpaces.js";
 
 export function setCartProductDesctop(product) {
+
   if (product.inStock) {
     let quantityRemains =
       product.quantityRemains != 0 && product.quantityRemains < 10
@@ -16,6 +17,7 @@ export function setCartProductDesctop(product) {
     activProduct.innerHTML = `
       <div class="product-cart">
       <div class="product-cart__block">
+        ${product.specification?.size ? `<div class="product-cart__block-size">${product.specification.size}</div>`:''}
         <button id="selectCard-${product.id}" class="${
           product.isSelected ? "checkbox_active" : "checkbox_inactive"
         }"></button>
@@ -33,7 +35,7 @@ export function setCartProductDesctop(product) {
           }
           ${
             product.specification?.size
-              ? `<p class="text-p">Размер: ${product.specification.size}</p>`
+              ? `<p class="text-p" id="sizeNum">Размер: ${product.specification.size}</p>`
               : ""
           } </div>`
             : ""
@@ -105,14 +107,15 @@ export function setCartProductDesctop(product) {
     inactiveProduct.innerHTML = `
     <div class="product-cart product-cart-disassembled">
     <div class="product-cart__block">
+      ${product.specification?.size ? `<div class="product-cart__block-size">${product.specification.size}</div>`:''}
       <img src="./src/img/${product.img}.png" />
     </div>
 
-    <div class="product-discription">
+    <div class="product-discription-disassembled">
       <h4 class="title-h4-gray">${product.title}</h4>
       ${
         product?.specification
-          ? `<div class="product-discription__spec">
+          ? `<div class="product-discription-disassembled__spec">
         ${
           product.specification?.color
             ? `<p  class="text-p-gray" id="spec">Цвет: ${product.specification.color}</p>`
@@ -120,7 +123,7 @@ export function setCartProductDesctop(product) {
         }
         ${
           product.specification?.size
-            ? `<p  class="text-p-gray">Размер: ${product.specification.size}</p>`
+            ? `<p  class="text-p-gray" id="sizeNum">Размер: ${product.specification.size}</p>`
             : ""
         } </div>`
           : ""
@@ -137,8 +140,6 @@ export function setCartProductDesctop(product) {
           <button id="bin-${product.id}" class="product-quantity__btn-bin"></button>
       </div>
     </div>
-
-    <div class="product-price"></div>
   </div>`;
 
     document.getElementById("inactiveCarts").appendChild(inactiveProduct);

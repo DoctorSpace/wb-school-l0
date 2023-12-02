@@ -7,12 +7,38 @@
 }
 
 
-@media (max-width: 768px) {
-    .root {
-        max-width: 769px;
-        min-width: 400px;
+@media (max-width: 1023px) {
+    .root{
+        zoom: 85%;
     }
 }
+
+@media (max-width: 900px) {
+    .root{
+        zoom: 75%;
+    }
+}
+
+@media (max-width: 800px) {
+    .root{
+        zoom: 75%;
+    }
+}
+
+@media (max-width: 768px) {
+    .root {
+        zoom: 100%;
+
+        min-width: 320px;
+        max-width: 1600px;
+    
+        margin: 0 auto;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+}
+
+
 
 
 :root{

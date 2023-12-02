@@ -10,23 +10,38 @@ import { phoneNumber } from "../script/phoneNumber.js";
 
 
 // Получаем ширину экрана
-document.addEventListener("DOMContentLoaded", (size) => {
-  updateWidthDisplay();
-  window.addEventListener("resize", () => {
-    updateWidthDisplay();
-  });
-});
+// document.addEventListener("DOMContentLoaded", (size) => {
+//   updateWidthDisplay();
+//   window.addEventListener("resize", () => {
+//     updateWidthDisplay();
+//   });
+// });
 
-function updateWidthDisplay() {
-  // вывод Размеров
-  //   console.log(window.innerWidth);
-}
+
+
+// function updateWidthDisplay() {
+
+
+//   if (window.innerWidth > 768){
+//     products.forEach((item) => {
+//       setCartProductDesctop(item);
+//     });
+//   } else {
+//     products.forEach((item) => {
+//       setCartProductMobile(item);
+//     });
+
+//   }
+// }
 
 // Добавление карточек (Desctop)
 products.forEach((item) => {
   setCartProductDesctop(item);
 });
 
+// products.forEach((item) => {
+//   setCartProductMobile(item);
+// });
 
 
 
@@ -53,16 +68,18 @@ const fullPrice1 = document.getElementById("fullPrice-1");
 const fullPrice2 = document.getElementById("fullPrice-2");
 const fullPrice3 = document.getElementById("fullPrice-3");
 
+const AllSelectCards = document.getElementById("selectAllbtn");
+const selectCard1 = document.getElementById("selectCard-1");
+const selectCard2 = document.getElementById("selectCard-2");
+const selectCard3 = document.getElementById("selectCard-3");
+
+
 const totalPrice = document.getElementById("totalPrice");
 const totalCounts = document.getElementById("totalCounts");
 const totalPriceCounts = document.getElementById("totalPriceCounts");
 const totalDiscount = document.getElementById("totalDiscount");
 const Total = { totalPrice, totalCounts, totalPriceCounts, totalDiscount};
 
-const AllSelectCards = document.getElementById("selectAllbtn");
-const selectCard1 = document.getElementById("selectCard-1");
-const selectCard2 = document.getElementById("selectCard-2");
-const selectCard3 = document.getElementById("selectCard-3");
 
 const ocAllSelectedActiv = document.getElementById("ocAllSelectedActiv");
 const ocAllSelectedInactive = document.getElementById("ocAllSelectedInactive");

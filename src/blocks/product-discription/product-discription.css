@@ -12,6 +12,9 @@
   gap: 18px;
 }
 
+#sizeNum{
+  display: block;
+}
 
 .product-discription__org {
   display: flex;
@@ -40,4 +43,20 @@
 
 .product-discription__orgnInfo img:hover + dialog {
   display: flex;
+}
+
+@media (max-width: 768px) {
+
+  .product-discription {
+    grid-area: b;
+    gap: 6px;
+  }
+
+  #sizeNum{
+    display: none;
+  }
+
+  .product-discription__org-icon{
+    display: none;
+  }
 }

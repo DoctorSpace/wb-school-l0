@@ -1,17 +1,43 @@
-.product-cart-disassembled{
-    margin-top: 12px;
+.product-cart-disassembled {
+  margin-top: 12px;
 }
 
-.product-cart-disassembled img{
-    filter: grayscale(100%);
+.product-cart-disassembled img {
+  filter: grayscale(100%);
 }
 
-.product-cart-disassembled h4{
-    width: 300px;
-    color: var(--Gray);
+.product-cart-disassembled h4 {
+  width: 300px;
+  color: var(--Gray);
 }
 
-.product-cart-disassembled p{
-    color: var(--Gray);
+.product-cart-disassembled p {
+  color: var(--Gray);
 }
 
+@media (max-width: 768px) {
+  .product-cart-disassembled {
+    position: relative;
+    margin-top: 13px;
+    width: 192px;
+  }
+
+
+  .product-cart-disassembled h4 {
+    display: -webkit-box;
+
+    width: 192px;
+
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+
+    margin: 0; /* Убираем внешний отступ */
+    -webkit-line-clamp: 2; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+  }
+}

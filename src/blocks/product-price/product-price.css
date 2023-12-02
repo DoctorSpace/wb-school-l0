@@ -2,6 +2,8 @@
   width: 110px;
   height: 100%;
 
+  margin-left: 0;
+
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -49,4 +51,37 @@
 
 .product-price__full-price span:hover + dialog{
   display: flex;
+}
+
+@media (max-width: 768px) {
+
+  .product-price {
+    grid-area: d;
+    display: flex;
+    gap:4px;
+
+    margin-left: 16px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+  }
+
+  .product-price__full-price {
+    justify-content: start;
+    width: auto;
+  
+    background-color: transparent;
+    border: none;
+    color: var(--Gray);
+    cursor: pointer;
+    margin-top: 4px;
+    padding: 0;
+    white-space: nowrap;
+  }
+
+  .product-price__actual-price span{
+    padding-bottom: 4px;
+  }
+
 }

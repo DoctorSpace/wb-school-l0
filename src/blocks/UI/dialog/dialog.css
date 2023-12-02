@@ -25,6 +25,16 @@ dialog {
     margin-top: 22px;
 }
 
+.dialog-info{
+  left: 90px;
+  margin-top: 22px;
+}
+
+.dialog-result-info{
+  left: 0px;
+  margin-top: 38px;
+}
+
 .dialog-price__sale, .dialog-price__saleCustomer{
     display: flex;
     gap: 8px;
@@ -58,7 +68,7 @@ dialog p {
 
 dialog span{
   display: block;
-  width: 248px;
+  width: 252px;
 
   color: var(--BlackText);
   align-self: stretch;

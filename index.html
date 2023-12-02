@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="./src/pages/index.css" />
   </head>
   <body id="body">
+
+    <div class="tabbar">
+      <img src="./src/img/tabbar/main.svg">
+      <img src="./src/img/tabbar/catalog.svg">
+      <img src="./src/img/tabbar/cart.svg">
+      <img src="./src/img/tabbar/favorites.svg">
+      <img src="./src/img/tabbar/profile.svg">
+    </div>
+
     <div class="root">
       <header>
         <div class="header__menu">
@@ -87,15 +96,15 @@
                   <img src="./src/img/product1.png" />
                 </div>
                 <div class="product-discription">
-                  <h4>Футболка UZcotton мужская</h4>
+                  <h4 class="title-h4">Футболка UZcotton мужская</h4>
                   <div class="product-discription__spec">
-                    <p>Цвет: белый</p>
-                    <p>Размер: 56</p>
+                    <p class="text-p-gray">Цвет: белый</p>
+                    <p class="text-p-gray">Размер: 56</p>
                   </div>
                   <div class="product-discription__org">
-                    <p>Коледино WB</p>
+                    <p class="text-p-gray">Коледино WB</p>
                     <div class="product-discription__org-icon">
-                      <p>OOO Вайлдберриз</p>
+                      <p class="text-p-gray">OOO Вайлдберриз</p>
                       <div class="product-discription__orgnInfo">
                         <img src="./src/img/info.svg" />
                         <dialog class="dialog-orgnInfo">
@@ -142,12 +151,12 @@
                     </dialog>
                   </button>
                 </div>
-              </div> -->
+              </div>  -->
+           
 
 
               <!-- Карточка 1 мобильный -->
-              <!-- <div class="product-cart-mobile dNone">
-
+              <!-- <div class="product-cart-mobile">
                 <div class="product-cart_row1">
                   <div class="product-cart-mobile__block">
                     <button id="selectCard-1" class="checkbox_active"></button>
@@ -157,26 +166,22 @@
   
                   <div class="product-discription-mobile">
                     <div class="product-price-mobile">
-                      <div class="product-price__actual-price-mobile">
-                        <p class="price-texe-h3">522
-                          <span>сом</span>
-                          <button class="product-price__full-price">
+                        <p class="price-texe-h3">522 сом</p>
+                        <button class="product-price-mobile__full-price ">
                             <span id="full-price">1051 сом</span>
-                            <div class="tooltip">
-                              <div>
+                            <dialog class="dialog-price">
+                              <div class="dialog-price__sale">
                                 <span>Скидка 55%</span>
                                 <p>- 300 сом</p>
                               </div>
-                              <div>
+                              <div class="dialog-price__saleCustomer">
                                 <span>Скидка покупателя 10%</span>
                                 <p>- 30 сом</p>
                               </div>
-                            </div>
+                            </dialog>
                           </button>
-                        </p>
-                      </div>
                     </div>
-                    <h4>Футболка UZcotton мужская</h4>
+                    <h4 class="title-h4">Футболка UZcotton мужская</h4>
                     <div class="product-discription-mobile__spec">
                       <p>Цвет: белый</p>
                     </div>
@@ -281,10 +286,13 @@
 
             <div class="delivery__notice">
               <img src="./src/img/greenTick.svg" />
-              <p class="text-p">
-                Обратная доставка товаров на cклад при отказе —
-                <span class ="text-span-green">бесплатно</span>
-              </p>
+              <div class="delivery__notice-Info">
+                <p class="text-p">Обратная доставка товаров на cклад при отказе — </p>
+                <span class="noticeInfo text-span-green"> бесплатно</span>
+                <dialog class="dialog-info">
+                    <span>Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</span>
+                </dialog>
+              </div>
             </div>
           </div>
 
@@ -395,7 +403,12 @@
           <!-- Обратная доставка -->
           <div class="result-notice">
             <img src="./src/img/greenTick.svg">
-            <p>Обратная доставка товаров на склад при отказе — <span>бесплатно</span></p>
+            <div class="result-notice-Info">
+              <p class="text-p">Обратная доставка товаров на склад при отказе — <span class="text-span-green">бесплатно</span></p>
+              <dialog class="dialog-result-info">
+                <span>Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</span>
+              </dialog>
+            </div>
           </div>
 
           <!-- Оплата картой -->

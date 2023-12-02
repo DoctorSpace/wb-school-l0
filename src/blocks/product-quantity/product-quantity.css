@@ -124,3 +124,45 @@
   .product-quantity__btn-bin:hover{
     background-image: url("../../img/bin-activ.svg");
   }
+
+
+  @media (max-width: 768px) {
+    .product-quantity {
+      grid-area: 3;
+
+      position: relative;
+
+      display: flex;
+      flex-direction: row;
+
+      align-items: center;
+      width: auto;
+
+      gap: 16px;
+    }
+
+    .product-quantity p {
+      position: absolute;
+      left: 96px;
+      width: 90px;
+    }
+
+    .product-quantity__control{
+      height: 32px;
+    }
+
+    .product-quantity__control-min, .product-quantity__control-max {
+      padding: 3px 10px 8px 14px;
+    }
+    .product-quantity__control-num {
+      padding: 0 0 3px 1px;
+    }
+
+
+    .product-quantity__btn{
+      position: absolute;
+      gap: 24px;
+      left: 210px;
+    }
+
+  }

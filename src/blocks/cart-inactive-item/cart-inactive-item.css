@@ -39,3 +39,15 @@
   gap: 20px;
   margin-top: -1px;
 }
+
+
+@media (max-width: 768px) {
+
+  .cart-inactive-item__cards {
+    gap: 0px;
+  }
+
+  .cart-inactive-item__allSelected {
+    margin-top: 42px;
+}
+}

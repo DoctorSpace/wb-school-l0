@@ -12,7 +12,11 @@
   justify-content: center;
 }
 
-.product-cart__size p{
+.product-cart__block-size {
+  display: none;
+}
+
+.product-cart__size p {
   color: var(--BlackText);
 
   font-family: Segoe UI;
@@ -32,16 +36,60 @@
   border-radius: 8px;
 }
 
-/* @media (max-width: 688px) {
-
+@media (max-width: 768px) {
   .product-cart {
     position: relative;
+
+    display: grid;
+    grid-template-rows: 26px 1fr 47px;
+    grid-template-columns: 80px 1fr;
+    grid-template-areas: "a d d" "a b b" "c c c";
   }
 
-  .product-cart__block button{
+  .product-cart h4 {
+    display: -webkit-box;
+
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+
+    margin: 0; /* Убираем внешний отступ */
+    -webkit-line-clamp: 2; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+  }
+
+  .product-cart__block {
+    display: block;
+    grid-area: a;
+  }
+
+  .product-cart__block button {
     position: absolute;
     left: 4px;
     top: 4px;
+  }
+
+  .product-cart__block-size {
+    position: absolute;
+    font-size: 14px;
+
+    display: block;
+
+    text-align: center;
+    display: block;
+    background-color: var(--White);
+
+    left: 4px;
+    top: 80px;
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+
+    z-index: 2;
   }
 
   .product-cart__block img {
@@ -50,7 +98,7 @@
     border-radius: 8px;
   }
 
-  .product-cart__size{
+  .product-cart__size {
     font-size: 14px;
 
     text-align: center;
@@ -64,4 +112,4 @@
     height: 22px;
     border-radius: 6px;
   }
-} */
+}

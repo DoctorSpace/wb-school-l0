@@ -1,6 +1,8 @@
 .checkbox_active{
     cursor: pointer;
-
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     width: 22px;
     height: 22px;
     border: 0;
@@ -28,4 +30,47 @@
 
     background-image: url(../../../img/checkboxOFF.svg);
     border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+
+/*   
+    .checkbox_active{
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 6.875vw;
+        width: 6.875vw;
+        border: 0;
+        background-image: url(../../../img/checkboxON.svg);
+    
+        border-radius: 6px;
+    }
+
+    .checkbox_inactive{
+        cursor: pointer;
+    
+        height: 6.875vw;
+        width: 6.875vw;
+        border: 0;
+        background-image: url(../../../img/checkboxOFF.svg);
+    
+        border-radius: 6px;
+    }
+
+    .checkbox{
+        cursor: pointer;
+
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        height: 6.875vw;
+        width: 6.875vw;
+        border: 0;
+    
+        background-image: url(../../../img/checkboxOFF.svg);
+        border-radius: 6px;
+    } */
 }
