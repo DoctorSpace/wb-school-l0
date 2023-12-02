@@ -14,7 +14,6 @@ export function Min(
   arrivalKit1,
   arrivalKit2
 ) {
-  console.log("min");
   if (product.quantity > 1) {
     product.quantity--;
     number.innerText = product.quantity;
@@ -39,6 +38,10 @@ export function Min(
       Total.totalDiscount.textContent = `−${numberWithSpaces(
         Math.trunc(total_Discount - (product.fullPrice - product.price))
       )}`;
+
+      if (writeOffPaymentINFO.classList.contains('dNone')){
+        OrderBtn.innerHTML = `Оплатить ${Total.totalPrice.textContent} сом`
+      }
 
       let arrival_Product1 = arrivalProduct1.textContent;
       let arrival_Product2 = arrivalProduct2.textContent;
@@ -68,8 +71,6 @@ export function Min(
       buttonMin.classList.remove("product-quantity__control-min_activ");
       buttonMax.classList.add("product-quantity__control-max_activ");
     }
-  } else {
-    console.log("lock");
   }
 }
 
@@ -111,6 +112,10 @@ export function Max(
         Math.trunc(total_Discount + (product.fullPrice - product.price))
       )}`;
 
+      if (writeOffPaymentINFO.classList.contains('dNone')){
+        OrderBtn.innerHTML = `Оплатить ${Total.totalPrice.textContent} сом`
+      }
+
       let arrival_Product1 = Number(arrivalProduct1.textContent);
       let arrival_Product2 = Number(arrivalProduct2.textContent);
 
@@ -135,7 +140,5 @@ export function Max(
       buttonMax.classList.remove("product-quantity__control-max_activ");
       buttonMin.classList.add("product-quantity__control-min_activ");
     }
-  } else {
-    console.log("lock");
   }
 }

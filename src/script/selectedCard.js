@@ -22,6 +22,10 @@ export function selectCard(button, product, Total, buttonAll) {
       buttonAll.classList.remove("checkbox_active");
       buttonAll.classList.add("checkbox");
 
+      if (writeOffPaymentINFO.classList.contains('dNone')){
+        OrderBtn.innerHTML = `Оплатить ${Total.totalPrice.textContent} сом`
+      }
+
     } else {
       product.isSelected = true;
       button.classList.remove("checkbox");
@@ -36,6 +40,10 @@ export function selectCard(button, product, Total, buttonAll) {
       Total.totalCounts.textContent = `${total_Counts + product.quantity}`;
       Total.totalPriceCounts.textContent = `${numberWithSpaces(Math.trunc(total_PriceCounts + product.fullPrice * product.quantity))}`;
       Total.totalDiscount.textContent = `−${numberWithSpaces(Math.trunc(total_Discount +(product.fullPrice - product.price) * product.quantity) )}`
+
+      if (writeOffPaymentINFO.classList.contains('dNone')){
+        OrderBtn.innerHTML = `Оплатить ${Total.totalPrice.textContent} сом`
+      }
 
     }
 
@@ -76,6 +84,11 @@ export function allSelectCard(
       Total.totalCounts.textContent = 0;
       Total.totalPriceCounts.textContent = 0;
       Total.totalDiscount.textContent = 0;
+
+      if (writeOffPaymentINFO.classList.contains('dNone')){
+        OrderBtn.innerHTML = `Оплатить ${Total.totalPrice.textContent} сом`
+      }
+
     } else {
       state = true;
       button.classList.remove("checkbox");
@@ -113,6 +126,10 @@ export function allSelectCard(
       Total.totalCounts.textContent = total_Counts;
       Total.totalPriceCounts.textContent = `${numberWithSpaces(Math.trunc(total_PriceCounts))}`;
       Total.totalDiscount.textContent = `−${numberWithSpaces(Math.trunc(total_Discount))}`;
+
+      if (writeOffPaymentINFO.classList.contains('dNone')){
+        OrderBtn.innerHTML = `Оплатить ${Total.totalPrice.textContent} сом`
+      }
     }
 
     return state
@@ -144,7 +161,8 @@ export function deletedCard(product, Total){
   Total.totalPriceCounts.textContent = `${numberWithSpaces(total_PriceCounts)}`;
   Total.totalDiscount.textContent = `−${numberWithSpaces(total_Discount)}`;
 
-
-
+  if (writeOffPaymentINFO.classList.contains('dNone')){
+    OrderBtn.innerHTML = `Оплатить ${Total.totalPrice.textContent} сом`
+  }
 
 }

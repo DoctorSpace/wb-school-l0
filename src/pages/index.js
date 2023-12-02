@@ -3,11 +3,9 @@ import { Min, Max } from "../script/calculator.js";
 import { setCartProductDesctop } from "../script/productCart.js";
 import { numberWithSpaces } from "../script/numberWithSpaces.js";
 import { createDeliveryModal } from "../script/createModalWindow.js";
-import {
-  selectCard,
-  allSelectCard,
-  deletedCard,
-} from "../script/selectedCard.js";
+import {selectCard,allSelectCard,deletedCard,} from "../script/selectedCard.js";
+import { phoneNumberValidation, InnValidation, emailValidation ,nameValidation } from "../script/validation.js";
+import { phoneNumber } from "../script/phoneNumber.js";
 
 
 
@@ -28,6 +26,10 @@ function updateWidthDisplay() {
 products.forEach((item) => {
   setCartProductDesctop(item);
 });
+
+
+
+
 
 // ----------------------
 
@@ -55,7 +57,7 @@ const totalPrice = document.getElementById("totalPrice");
 const totalCounts = document.getElementById("totalCounts");
 const totalPriceCounts = document.getElementById("totalPriceCounts");
 const totalDiscount = document.getElementById("totalDiscount");
-const Total = { totalPrice, totalCounts, totalPriceCounts, totalDiscount };
+const Total = { totalPrice, totalCounts, totalPriceCounts, totalDiscount};
 
 const AllSelectCards = document.getElementById("selectAllbtn");
 const selectCard1 = document.getElementById("selectCard-1");
@@ -76,12 +78,8 @@ const OrderBtn = document.getElementById("OrderBtn");
 
 const allSelectedInactive = document.getElementById("allSelectedInactive");
 const countActivProducts = document.getElementById("countActivProducts");
-const ocAllSelectedActivText = document.getElementById(
-  "ocAllSelectedActivText"
-);
-const ocAllSelectedActivTextadd = document.getElementById(
-  "ocAllSelectedActivTextadd"
-);
+const ocAllSelectedActivText = document.getElementById( "ocAllSelectedActivText");
+const ocAllSelectedActivTextadd = document.getElementById( "ocAllSelectedActivTextadd");
 
 let allSelectedInactiveCount = 3;
 let allSelectedActivCount = 3;
@@ -118,54 +116,251 @@ const setDeliveryLocationBtn2 = document.getElementById("deliveryLocationBtn2")
 const setPaymentCardBtn1 = document.getElementById("setPaymentCardBtn1")
 const setPaymentCardBtn2 = document.getElementById("setPaymentCardBtn2")
 
+const spanFirstname = document.getElementById("spanFirstname");
+const inputFirstname = document.getElementById("inputFirstname");
+const pFirstname = document.getElementById("pFirstname");
+
+const spanSurname = document.getElementById("spanSurname");
+const inputSurname = document.getElementById("inputSurname");
+const pSurname = document.getElementById("pSurname");
+
+const spanMail = document.getElementById("spanMail");
+const inputMail = document.getElementById("inputMail");
+const pMail = document.getElementById("pMail");
+
+const spanNumber = document.getElementById("spanNumber");
+const inputNumber = document.getElementById("inputNumber");
+const pNumber = document.getElementById("pNumber");
+
+const spanIIN = document.getElementById("spanIIN");
+const inputIIN = document.getElementById("inputIIN");
+const pIIN = document.getElementById("pIIN");
+
+const Recipient = document.getElementById("Recipient");
+
+let TotalPriceBtnCount = 0
+
+// Кнопка ЗАКАЗАТь
+OrderBtn.addEventListener("click", () => {
+  if ((nameValidation(inputFirstname.value) || inputFirstname.value == '')){
+    pFirstname.classList.remove("dNone");
+    pFirstname.classList.add("recipientInfoTextError");
+    inputFirstname.classList.add("recipientInputError");
+  }
+  if ((nameValidation(inputSurname.value) || inputSurname.value == '')){
+    pSurname.classList.remove("dNone");
+    pSurname.classList.add("recipientInfoTextError");
+    inputSurname.classList.add("recipientInputError");
+  }
+  if (!(emailValidation(inputMail.value)) || (inputMail.value == '')){
+    pMail.classList.remove("dNone");
+    pMail.classList.add("recipientInfoTextError");
+    inputMail.classList.add("recipientInputError");
+  }
+  if (!(phoneNumberValidation(inputNumber.value))  || (inputNumber.value == '')){
+    pNumber.classList.remove("dNone");
+    pNumber.classList.add("recipientInfoTextError");
+    inputNumber.classList.add("recipientInputError");
+
+  }
+  if (!(InnValidation(inputIIN.value)) || (inputIIN.value == '')){
+    pIIN.classList.remove("dNone");
+    pIIN.classList.add("recipientInfoTextError");
+    inputIIN.classList.add("recipientInputError");  
+  }
 
 
-
-
-const spanFirstname = document.getElementById("spanFirstname")
-const inputFirstname = document.getElementById("inputFirstname")
-const pFirstname = document.getElementById("pFirstname")
-
-const spanSurname = document.getElementById("spanSurname")
-const inputSurname = document.getElementById("inputSurname")
-const pSurname = document.getElementById("pSurname")
-
-const spanMail = document.getElementById("spanMail")
-const inputMail= document.getElementById("inputMail")
-const pMail = document.getElementById("pMail")
-
-const spanNumber = document.getElementById("spanNumber")
-const inputNumber = document.getElementById("inputNumber")
-const pNumber = document.getElementById("pNumber")
-
-const spanIIN = document.getElementById("spanIIN")
-const inputIIN = document.getElementById("inputIIN")
-const pIIN = document.getElementById("pIIN")
-
-
-
-// Получатель
-inputNumber.addEventListener('input', (eml)=>{
-  const x = eml.target.value.replace(/\D/g, '').match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
-  eml.target.value = !x[2] ? x[1] : '+' + x[1] + ' ' + x[2] + (x[3] ? ' ' + x[3] : '') + (x[4] ? ' ' + x[4] : '') + (x[5] ? ' ' + x[5] : '');
-
-  const regex = /^\+9 \d{3} \d{3} \d{2} \d{2}$/;
-  const result = regex.test(x);
-
-  
-  console.log(result);
-
-
+  if ( 
+    nameValidation(inputFirstname.value)
+    || nameValidation(inputSurname.value)
+    || !emailValidation(inputMail.value)
+    || !phoneNumberValidation(inputNumber.value)
+    || !InnValidation(inputIIN.value)
+  ){
+    Recipient.scrollIntoView({ behavior: "smooth" });
+  } else {
+    console.log('Покупка совершина');
+  }
 })
 
-spanFirstname.addEventListener('input', (eml)=>{
+
+// Валидация ---
+
+// Имя
+inputFirstname.addEventListener("focus", (eml) => {
+  spanFirstname.classList.toggle("recipientOpacityON");
+  spanFirstname.classList.toggle("recipientOpacityOFF");
+});
+
+inputFirstname.addEventListener("blur", (eml) => {
+  spanFirstname.classList.toggle("recipientOpacityOFF");
+  spanFirstname.classList.toggle("recipientOpacityON");
+
+  let validationFirstname = nameValidation(eml.target.value)
+
+  if (eml.target.value.length > 0) {
+    if (!validationFirstname) {
+      spanFirstname.classList.remove("recipientOpacityERROR");
+      eml.target.classList.remove("recipientInputError");
+      pFirstname.classList.add("dNone");
+      pFirstname.classList.remove("recipientInfoTextError");
+    } else {
+      spanFirstname.classList.add("recipientOpacityERROR");
+      eml.target.classList.add("recipientInputError");
+      pFirstname.classList.remove("dNone");
+      pFirstname.classList.add("recipientInfoTextError");
+    }
+  }
+});
+
+inputFirstname.addEventListener("input", (eml) => {
+
+  eml.target.value.length > 0
+  ? spanFirstname.classList.add("recipientOpacityOK")
+  : spanFirstname.classList.remove("recipientOpacityOK")
+});
 
 
-})
+// Фамилия
+inputSurname.addEventListener("focus", (eml) => {
+  spanSurname.classList.toggle("recipientOpacityON");
+  spanSurname.classList.toggle("recipientOpacityOFF");
+});
+
+inputSurname.addEventListener("blur", (eml) => {
+  spanSurname.classList.toggle("recipientOpacityOFF");
+  spanSurname.classList.toggle("recipientOpacityON");
+
+  let validationSurname = nameValidation(eml.target.value)
+
+  if (eml.target.value.length > 0) {
+    if (!validationSurname) {
+      spanSurname.classList.remove("recipientOpacityERROR");
+      eml.target.classList.remove("recipientInputError");
+      pSurname.classList.add("dNone");
+      pSurname.classList.remove("recipientInfoTextError");
+    } else {
+      spanSurname.classList.add("recipientOpacityERROR");
+      eml.target.classList.add("recipientInputError");
+      pSurname.classList.remove("dNone");
+      pSurname.classList.add("recipientInfoTextError");
+    }
+  }
+});
+
+inputSurname.addEventListener("input", (eml) => {
+  eml.target.value.length > 0
+  ? spanSurname.classList.add("recipientOpacityOK")
+  : spanSurname.classList.remove("recipientOpacityOK")
+});
 
 
+//  Маил
+inputMail.addEventListener("focus", (eml) => {
+  spanMail.classList.toggle("recipientOpacityON");
+  spanMail.classList.toggle("recipientOpacityOFF");
+});
+
+inputMail.addEventListener("blur", (eml) => {
+  spanMail.classList.toggle("recipientOpacityOFF");
+  spanMail.classList.toggle("recipientOpacityON");
+
+  let validationMail = emailValidation(eml.target.value)
+  if (eml.target.value.length > 0) {
+    if (validationMail) {
+      spanMail.classList.remove("recipientOpacityERROR");
+      eml.target.classList.remove("recipientInputError");
+      pMail.classList.add("dNone");
+      pMail.classList.remove("recipientInfoTextError");
+    } else {
+      spanMail.classList.add("recipientOpacityERROR");
+      eml.target.classList.add("recipientInputError");
+      pMail.classList.remove("dNone");
+      pMail.classList.add("recipientInfoTextError");
+    }
+  }
+});
+
+inputMail.addEventListener("input", (eml) => {
+
+  eml.target.value.length > 0
+  ? spanMail.classList.add("recipientOpacityOK")
+  : spanMail.classList.remove("recipientOpacityOK")
+});
 
 
+// Телефон
+inputNumber.addEventListener("focus", (eml) => {
+  spanNumber.classList.toggle("recipientOpacityON");
+  spanNumber.classList.toggle("recipientOpacityOFF");
+});
+
+inputNumber.addEventListener("blur", (eml) => {
+  spanNumber.classList.toggle("recipientOpacityOFF");
+  spanNumber.classList.toggle("recipientOpacityON");
+
+  let validationPhone = phoneNumberValidation(eml.target.value);
+
+  if (eml.target.value.length > 0) {
+    if (validationPhone) {
+      spanNumber.classList.remove("recipientOpacityERROR");
+      eml.target.classList.remove("recipientInputError");
+      pNumber.classList.add("dNone");
+      pNumber.classList.remove("recipientInfoTextError");
+    } else {
+      spanNumber.classList.add("recipientOpacityERROR");
+      eml.target.classList.add("recipientInputError");
+      pNumber.classList.remove("dNone");
+      pNumber.classList.add("recipientInfoTextError");
+    }
+  }
+});
+
+inputNumber.addEventListener("input", (eml) => {
+  eml.target.value = phoneNumber(eml.target.value);
+
+  eml.target.value.length > 0
+  ? spanNumber.classList.add("recipientOpacityOK")
+  : spanNumber.classList.remove("recipientOpacityOK")
+});
+
+// ИНН 
+inputIIN.addEventListener("focus", (eml) => {
+  spanIIN.classList.toggle("recipientOpacityON");
+  spanIIN.classList.toggle("recipientOpacityOFF");
+});
+
+inputIIN.addEventListener("blur", (eml) => {
+  spanIIN.classList.toggle("recipientOpacityOFF");
+  spanIIN.classList.toggle("recipientOpacityON");
+
+  let validationInn = InnValidation(eml.target.value);
+
+  if (eml.target.value.length > 0) {
+    if (validationInn) {
+      eml.target.classList.remove("recipientInputError");
+      pIIN.innerText = "Для таможенного оформления";
+      pIIN.classList.remove("recipientInfoTextError");
+    } else {
+      spanIIN.classList.add("recipientOpacityERROR");
+      eml.target.classList.add("recipientInputError");
+
+      pIIN.innerText = "Проверьте ИНН";
+      pIIN.classList.add("recipientInfoTextError");
+    }
+  }
+});
+
+inputIIN.addEventListener("input", (eml) => {
+  eml.target.value = phoneIIN(eml.target.value);
+
+  eml.target.value.length > 0
+  ? spanIIN.classList.add("recipientOpacityOK")
+  : spanIIN.classList.remove("recipientOpacityOK")
+});
+
+
+// ------
 
 // Списывание
 writeOffPayment.addEventListener("click", () => {
@@ -180,15 +375,15 @@ writeOffPayment.addEventListener("click", () => {
     writeOffPaymentINFO.classList.add('dNone')
     writeOffPaymentIMG.src = "./src/img/checkboxON.svg"
 
+    TotalPriceBtnCount = totalPrice.textContent
 
-    OrderBtn.innerHTML = 'МНОГО'
-    // Добавить Счётчик
+    OrderBtn.innerHTML = `Оплатить ${TotalPriceBtnCount} сом`
   }
-
 })
 
-
-
+// if (writeOffPaymentINFO.classList.contains('dNone')){
+//  OrderBtn.innerHTML = `Оплатить ${totalPrice.textContent} сом`
+//}
 
 // Модальное окно delivery
 const overlay = document.querySelector(".overlay");

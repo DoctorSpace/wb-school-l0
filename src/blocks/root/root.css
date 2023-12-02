@@ -6,6 +6,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 @media (max-width: 768px) {
     .root {
         max-width: 769px;
