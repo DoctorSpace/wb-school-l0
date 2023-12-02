@@ -137,8 +137,6 @@ input::-webkit-inner-spin-button {
   border-bottom: 1px solid var(--Orange);
 }
 
-/* recipientOpacity */
-
 .recipientOpacityON {
   opacity: 0;
   transition: opacity 0.3s ease;

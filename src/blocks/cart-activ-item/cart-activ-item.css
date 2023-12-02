@@ -34,8 +34,6 @@
 }
 
 .cart-activ-item__cards {
-
-  margin-top: 2px;
   display: flex;
   flex-direction: column;
   gap: 20px;

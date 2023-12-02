@@ -31,12 +31,12 @@
 
 .cart-result__writeOffPayment {
   border-radius: 8px;
-  margin-top: 15px;
+  margin-top: 17px;
   display: flex;
   padding: 8px 8px 12px 8px;
   flex-direction: column;
   background-color: var(--BackgroundSmoky);
-  gap: 6px;
+  gap: 8px;
 }
 
 .cart-result__writeOffPayment p {
@@ -55,7 +55,7 @@
 
   height: 22px;
 
-  gap: 9px;
+  gap: 8px;
 
   align-items: center;
   color: var(--BlackText);
@@ -113,11 +113,13 @@
 .cart-result__agreement{
     display: flex;
     flex-direction: row;
-    gap: 9px;
-    margin-top: 14px;
+    gap: 8px;
+    margin-top: 12px;
+    width: auto;
 }
 
 .cart-result__agreement img{
+
     margin-top: -6px;
 }
 
@@ -131,4 +133,16 @@
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
+}
+
+
+@media (max-width: 1024px) {
+  .cart-result__agreement{
+    width: 230px;
+  }
+  .cart-result__agreement img{
+    margin-top: -24px;
+  }
+
+
 }

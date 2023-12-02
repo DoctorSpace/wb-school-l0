@@ -26,13 +26,13 @@
 
 .delivery__info {
   margin-top: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 
   display: flex;
   flex-direction: column;
   justify-content: start;
 
-  gap: 16px;
+  gap: 17px;
 }
 
 .delivery__notice {

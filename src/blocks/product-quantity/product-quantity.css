@@ -64,7 +64,7 @@
   
   .product-quantity__control-num {
     margin: 0 auto;
-    padding: 0 0 5px 0;
+    padding: 0 0 7px 1px;
     text-align: center;
     background-color: var(--BackgroundWhite);
   

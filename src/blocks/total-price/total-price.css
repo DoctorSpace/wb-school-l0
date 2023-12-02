@@ -25,7 +25,6 @@
     font-style: normal;
     font-weight: 700;
     line-height: 32px;
-    letter-spacing: -0.24px;
 }
 
 .total-price__actual span{
@@ -56,7 +55,7 @@
 
 @media (max-width: 1024px) {
     .total-price__actual {
-        margin-bottom: 4px;
+        margin-bottom: 7px;
     }
 
 }
