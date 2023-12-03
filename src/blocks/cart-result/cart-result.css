@@ -74,14 +74,13 @@
   background-color: var(--Transparent);
 }
 
-#writeOffPayment{
+#writeOffPayment {
   height: 22px;
 }
 
 .cart-result__writeOffPayment-btn label {
   cursor: pointer;
 }
-  
 
 .cart-result__button {
   cursor: pointer;
@@ -109,40 +108,57 @@
   line-height: 24px;
 }
 
-
-.cart-result__agreement{
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    margin-top: 12px;
-    width: auto;
+.cart-result__agreement {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 12px;
+  width: auto;
 }
 
-.cart-result__agreement img{
-
-    margin-top: -6px;
+.cart-result__agreement img {
+  margin-top: -6px;
 }
 
-.cart-result__agreement p{
-    color: var(--BlackText);
+.cart-result__agreement p {
+  color: var(--BlackText);
 
-    width: 100%;
+  width: 100%;
 
-    font-family: Segoe UI;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px;
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
 }
-
 
 @media (max-width: 1024px) {
-  .cart-result__agreement{
+  .cart-result__agreement {
     width: 230px;
   }
-  .cart-result__agreement img{
+  .cart-result__agreement img {
     margin-top: -24px;
   }
+}
 
+@media (max-width: 768px) {
+  .cart-result {
+    display: flex;
+    padding: 23px 0px 0px;
 
+    background: none;
+    box-shadow: none;
+  }
+
+  .cart-result__writeOffPayment {
+    margin-top: 14px;
+  }
+
+  .cart-result__agreement {
+    width: 100%;
+  }
+
+  .cart-result__agreement img {
+    margin-top: -12px;
+}
 }

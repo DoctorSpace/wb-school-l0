@@ -41,8 +41,7 @@
   gap: 8px;
 }
 
-.delivery__notice-Info{
-
+.delivery__notice-Info {
   position: relative;
 
   cursor: pointer;
@@ -56,6 +55,71 @@
 }
 
 
+
+
 .delivery__notice-Info span:hover + dialog {
   display: flex;
+}
+
+
+@media (max-width: 768px) {
+  .delivery {
+    margin-top: 16px;
+    padding: 16px 0 24px;
+    border-radius: 16px;
+  }
+
+  .delivery__info {
+    margin-top: 8px;
+    margin-bottom: 23px;
+    gap: 16px;
+  }
+
+  .delivery__notice-Info {
+    position: relative;
+  
+    cursor: pointer;
+    justify-content: start;
+  
+    display: flex;
+    flex-direction: row;
+  
+    gap: 2px;
+    align-self: center;
+  }
+
+}
+
+@media (max-width: 432px) {
+  .delivery {
+    margin-top: 16px;
+    padding: 16px 0 24px;
+    border-radius: 16px;
+  }
+
+  .delivery__info {
+
+    margin-top: 8px;
+    margin-bottom: 23px;
+    gap: 16px;
+  }
+
+  .delivery__notice{
+    padding-top: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .delivery__notice-Info {
+    position: relative;
+  }
+
+  .noticeInfo{
+    position: absolute;
+    left: 84px;
+    top: 17px;
+  }
+
+
+
 }

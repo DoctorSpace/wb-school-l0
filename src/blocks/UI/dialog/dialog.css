@@ -79,3 +79,12 @@ dialog span{
   font-weight: 400;
   line-height: 16px;
 }
+
+
+@media (max-width: 768px) {
+  .dialog-info{
+    left: -40px;
+    margin-top: 38px;
+  }
+
+}

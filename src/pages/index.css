@@ -23,13 +23,6 @@
 @import url(../blocks/product-price/product-price.css);
 
 
-/* Cart-Mobile */
-@import url(../blocks/product-cart/product-cart-mobile.css);
-@import url(../blocks/product-discription/product-discription-mobile.css);
-@import url(../blocks/product-quantity/product-quantity-mobile.css);
-@import url(../blocks/product-price/product-price-mobile.css);
-
-
 /* Cart-inactive */
 @import url(../blocks/cart-inactive-item/cart-inactive-item.css);
 @import url(../blocks/product-cart/product-cart-disassembled.css);

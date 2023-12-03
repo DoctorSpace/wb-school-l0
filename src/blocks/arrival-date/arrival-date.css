@@ -63,3 +63,21 @@
   font-weight: 600;
   line-height: 16px;
 }
+
+
+@media (max-width: 768px) {
+
+  .arrival-date {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+  .arrival-date__kit {
+    display: flex;
+    flex-direction: column;
+  
+    gap: 12px;
+  }
+
+}

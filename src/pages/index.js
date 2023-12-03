@@ -9,41 +9,10 @@ import { phoneNumber } from "../script/phoneNumber.js";
 
 
 
-// Получаем ширину экрана
-// document.addEventListener("DOMContentLoaded", (size) => {
-//   updateWidthDisplay();
-//   window.addEventListener("resize", () => {
-//     updateWidthDisplay();
-//   });
-// });
 
-
-
-// function updateWidthDisplay() {
-
-
-//   if (window.innerWidth > 768){
-//     products.forEach((item) => {
-//       setCartProductDesctop(item);
-//     });
-//   } else {
-//     products.forEach((item) => {
-//       setCartProductMobile(item);
-//     });
-
-//   }
-// }
-
-// Добавление карточек (Desctop)
 products.forEach((item) => {
   setCartProductDesctop(item);
 });
-
-// products.forEach((item) => {
-//   setCartProductMobile(item);
-// });
-
-
 
 
 // ----------------------

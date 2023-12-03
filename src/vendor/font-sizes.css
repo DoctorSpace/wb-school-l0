@@ -18,6 +18,15 @@
     letter-spacing: -0.24px;
 }
 
+.title-h2-price{
+    color: var(--BlackText);
+    font-family: Segoe UI;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+
 .title-h3{
     color: var(--BlackText);
     font-family: Segoe UI;
@@ -149,6 +158,27 @@
         line-height: 28px;
         letter-spacing: -0.2px;
     }
+
+    .title-h2-price {
+        color: var(--BlackText);
+        font-family: Segoe UI;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: -0.2px;
+    }
+
+    .title-h2{
+        color: var(--BlackText);
+        font-family: Segoe UI;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: -0.2px;
+    }
+
 
     .title-h3{
         color: var(--BlackText);

@@ -43,3 +43,10 @@
   font-weight: 400;
   line-height: 16px;
 }
+
+
+@media (max-width: 768px) {
+  .result-payment {
+    display: none;
+  }
+}

@@ -9,18 +9,6 @@
   background-color: var(--BackgroundWhite);
 }
 
-.recipient h2 {
-  color: var(--BlackText);
-
-  font-family: Segoe UI;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 32px;
-  letter-spacing: -0.24px;
-}
-
-
 .recipient input::placeholder {
   color: var(--Gray);
 
@@ -30,6 +18,10 @@
 
   font-weight: 400;
   line-height: 24px;
+}
+
+.recipient-row {
+  display: block;
 }
 
 /* Name */
@@ -48,8 +40,6 @@
   font-weight: 400;
   color: var(--Gray);
 }
-
-
 
 .recipient__name div {
   width: 100%;
@@ -77,8 +67,6 @@
   color: var(--Gray);
 }
 
-
-
 .Contact_click {
   border-bottom: 2px solid var(--Orange);
 }
@@ -87,37 +75,36 @@
   border-bottom: 1px solid var(--Orange);
 }
 
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* recipientInfoText */
 
-.recipientInfoText{
-    color: var(--BlackText);
+.recipientInfoText {
+  color: var(--BlackText);
 
-    margin-top: 3px;
-    align-self: stretch;
-    font-family: Segoe UI;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 14px;
+  margin-top: 3px;
+  align-self: stretch;
+  font-family: Segoe UI;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
 }
 
-.recipientInfoTextError{
-    color: var(--Orange);;
+.recipientInfoTextError {
+  color: var(--Orange);
 
-    margin-top: 3px;
-    align-self: stretch;
-    font-family: Segoe UI;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 14px;
+  margin-top: 3px;
+  align-self: stretch;
+  font-family: Segoe UI;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
 }
 
 /* recipientInput */
@@ -148,9 +135,42 @@ input::-webkit-inner-spin-button {
 }
 
 .recipientOpacityERROR {
-    opacity: 1;
+  opacity: 1;
 }
 
 .recipientOpacityOK {
-    opacity: 1;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+
+  
+  .recipient {
+    padding: 12px 0px 24px 0px;
+    gap: 0px;
+  }
+
+  .recipientInput {
+    content: attr(data-placeholder);
+  }
+
+  .recipient__name {
+    margin-top: 0px;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 700px;
+  }
+
+  .recipient-row {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .recipient__contacts {
+    margin-top: 0px;
+    flex-direction: column;
+    gap: 22px;
+    max-width: 700px;
+  }
 }

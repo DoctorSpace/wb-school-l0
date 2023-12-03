@@ -10,7 +10,6 @@
   gap: 8px;
 }
 
-
 .result-notice-Info {
   position: relative;
 
@@ -25,4 +24,10 @@
 
 .result-notice-Info p:hover + dialog {
   display: flex;
+}
+
+@media (max-width: 768px) {
+  .result-notice {
+    margin-top: 20px;
+  }
 }

@@ -17,15 +17,6 @@
     margin-bottom: 8px;
 }
 
-.total-price__actual h2{
-    color: var(--BlackText);
-
-    font-family: Segoe UI;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
-}
 
 .total-price__actual span{
     color: var(--BlackText);

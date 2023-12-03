@@ -87,132 +87,8 @@
             </div>
             <div class="line"></div>
             <!-- Карточки товаров -->
-            <div id="activCarts" class="cart-activ-item__cards">
-
-              <!-- Карточка 1 -->
-              <!-- <div class="product-cart">
-                <div class="product-cart__block">
-                  <button id="selectCard-1" class="checkbox_active"></button>
-                  <img src="./src/img/product1.png" />
-                </div>
-                <div class="product-discription">
-                  <h4 class="title-h4">Футболка UZcotton мужская</h4>
-                  <div class="product-discription__spec">
-                    <p class="text-p-gray">Цвет: белый</p>
-                    <p class="text-p-gray">Размер: 56</p>
-                  </div>
-                  <div class="product-discription__org">
-                    <p class="text-p-gray">Коледино WB</p>
-                    <div class="product-discription__org-icon">
-                      <p class="text-p-gray">OOO Вайлдберриз</p>
-                      <div class="product-discription__orgnInfo">
-                        <img src="./src/img/info.svg" />
-                        <dialog class="dialog-orgnInfo">
-                          <h5>OOO «МЕГАПРОФСТИЛЬ»</h5>
-                          <span>ОГРН: 5167746237148</span>
-                          <span>129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34</span>
-                        </dialog>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="product-quantity">
-                  <div class="product-quantity__control">
-                    <div class="product-quantity__control-min">−</div>
-                    <div class="product-quantity__control-num">1</div>
-                    <div class="product-quantity__control-max">+</div>
-                  </div>
-                  <p>Осталось 2 шт.</p>
-                  <div class="product-quantity__btn">
-                    <button class="product-quantity__btn-heart"></button>
-                    <button id="bin" class="product-quantity__btn-bin"></button>
-                  </div>
-                </div>
-
-                <div class="product-price">
-                  <div class="product-price__actual-price">
-                    <p class="price-texe-h3">
-                      522
-                      <span>сом</span>
-                    </p>
-                  </div>
-                  <button class="product-price__full-price">
-                    <span id="full-price">1051 сом</span>
-                    <dialog class="dialog-price">
-                      <div class="dialog-price__sale">
-                        <span>Скидка 55%</span>
-                        <p>- 300 сом</p>
-                      </div>
-                      <div class="dialog-price__saleCustomer">
-                        <span>Скидка покупателя 10%</span>
-                        <p>- 30 сом</p>
-                      </div>
-                    </dialog>
-                  </button>
-                </div>
-              </div>  -->
-           
-
-
-              <!-- Карточка 1 мобильный -->
-              <!-- <div class="product-cart-mobile">
-                <div class="product-cart_row1">
-                  <div class="product-cart-mobile__block">
-                    <button id="selectCard-1" class="checkbox_active"></button>
-                    <p class="product-cart__size">56</p>
-                    <img src="./src/img/product1.png" />
-                  </div>
-  
-                  <div class="product-discription-mobile">
-                    <div class="product-price-mobile">
-                        <p class="price-texe-h3">522 сом</p>
-                        <button class="product-price-mobile__full-price ">
-                            <span id="full-price">1051 сом</span>
-                            <dialog class="dialog-price">
-                              <div class="dialog-price__sale">
-                                <span>Скидка 55%</span>
-                                <p>- 300 сом</p>
-                              </div>
-                              <div class="dialog-price__saleCustomer">
-                                <span>Скидка покупателя 10%</span>
-                                <p>- 30 сом</p>
-                              </div>
-                            </dialog>
-                          </button>
-                    </div>
-                    <h4 class="title-h4">Футболка UZcotton мужская</h4>
-                    <div class="product-discription-mobile__spec">
-                      <p>Цвет: белый</p>
-                    </div>
-                    <div class="product-discription__org">
-                      <p>Коледино WB</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="product-cart_row2">
-                  <div class="product-quantity-row">
-                    <div class="product-quantity-mobile">
-                        <div class="product-quantity-mobile__control">
-                          <div class="product-quantity-mobile__control-min">−</div>
-                          <div class="product-quantity-mobile__control-num">1</div>
-                          <div class="product-quantity-mobile__control-max">+</div>
-                        </div>
-                    </div>
-                    <p>Осталось 2 шт.</p>
-                  </div>
-  
-                  <div class="product-quantity-mobile__btn">
-                    <button><img src="./src/img/heart.svg" /></button>
-                    <button><img src="./src/img/bin.svg" /></button>
-                  </div>
-                </div>
-              </div> -->
-              <!-- Конец карточек -->
-            </div>
+            <div id="activCarts" class="cart-activ-item__cards"></div>
           </div>
-
           <!-- Главное поле НЕАКТИВНЫХ товаров -->
           <div class="cart-inactive-item">
             <div class="cart-inactive-item__allSelected">
@@ -222,6 +98,7 @@
               <img id="ocAllSelectedInactive" class="arrow" src="./src/img/arrow.svg" />
             </div>
             <div class="line"></div>
+            <!-- Карточки НЕАКТИВНЫХ товаров -->
             <div id="inactiveCarts" class="cart-inactive-item__cards">
             </div>
           </div>
@@ -299,7 +176,7 @@
           <!-- Способ оплаты -->
           <div class="payment">
             <div class="payment__method">
-              <h2>Способ оплаты</h2>
+              <h2 class="title-h2">Способ оплаты</h2>
               <button id="setPaymentCardBtn1">Изменить</button>
             </div>
 
@@ -314,38 +191,39 @@
 
           <!-- Получатель -->
           <div id="Recipient" class="recipient">
-            <h2>Получатель</h2>
+            <h2 class="title-h2">Получатель</h2>
+            <div class="recipient-row">
+              <div class="recipient__name">
+                <div>
+                  <span id="spanFirstname" class="recipientOpacityON">Имя</span>
+                  <input type="text" id="inputFirstname" class="recipientInput" placeholder="Имя">
+                  <p id="pFirstname" class="dNone recipientInfoTextError">Проверьте имя</p>
+                </div>
+                <div>
+                  <span id="spanSurname" class="recipientOpacityON">Фамилия</span>
+                  <input type="text" id="inputSurname" class="recipientInput" placeholder="Фамилия">
+                  <p id="pSurname" class="dNone recipientInfoTextError">Проверьте фамилию</p>
+                </div>
+              </div>
             
-            <div class="recipient__name">
-              <div>
-                <span id="spanFirstname" class="recipientOpacityON">Имя</span>
-                <input type="text" id="inputFirstname" class="recipientInput" placeholder="Имя">
-                <p id="pFirstname" class="dNone recipientInfoTextError">Проверьте имя</p>
-              </div>
-              <div>
-                <span id="spanSurname" class="recipientOpacityON">Фамилия</span>
-                <input type="text" id="inputSurname" class="recipientInput" placeholder="Фамилия">
-                <p id="pSurname" class="dNone recipientInfoTextError">Проверьте фамилию</p>
-              </div>
+              <div class="recipient__contacts">
+                <div>
+                  <span id="spanMail" class="recipientOpacityON">Почта</span>
+                  <input type="email" id="inputMail" class="recipientInput" placeholder="Почта">
+                  <p id="pMail" class="dNone recipientInfoTextError">Проверьте адрес электронной почты</p>
+                </div>
+                <div>
+                  <span id="spanNumber" class="recipientOpacityON">Телефон</span>
+                  <input id="inputNumber" class="recipientInput" placeholder="Телефон">
+                  <p id="pNumber" class="dNone recipientInfoTextError">Формат: +9 999 999 99 99</p>
+                </div>
+                <div>
+                  <span id="spanIIN" class="recipientOpacityON">ИНН</span>
+                  <input type="number" id="inputIIN" class="recipientInput" placeholder="ИНН">
+                  <p id="pIIN" class="recipientInfoText">Для таможенного оформления</p>
+                </div>
+                </div>
             </div>
-          
-            <div class="recipient__contacts">
-              <div>
-                <span id="spanMail" class="recipientOpacityON">Почта</span>
-                <input type="email" id="inputMail" class="recipientInput" placeholder="Почта">
-                <p id="pMail" class="dNone recipientInfoTextError">Проверьте адрес электронной почты</p>
-              </div>
-              <div>
-                <span id="spanNumber" class="recipientOpacityON">Телефон</span>
-                <input id="inputNumber" class="recipientInput" placeholder="Телефон">
-                <p id="pNumber" class="dNone recipientInfoTextError">Формат: +9 999 999 99 99</p>
-              </div>
-              <div>
-                <span id="spanIIN" class="recipientOpacityON">ИНН</span>
-                <input type="number" id="inputIIN" class="recipientInput" placeholder="ИНН">
-                <p id="pIIN" class="recipientInfoText">Для таможенного оформления</p>
-              </div>
-              </div>
           </div>
         </div>
 
@@ -360,7 +238,7 @@
             <div class="total-price__actual">
               <h2>Итого</h2>
               <div class="total-price_row">
-                <h2 id="totalPrice">2 101 063</h2>
+                <h2 id="totalPrice" class="title-h2-price">2 101 063</h2>
                 <span>сом</span>
               </div>
             </div>

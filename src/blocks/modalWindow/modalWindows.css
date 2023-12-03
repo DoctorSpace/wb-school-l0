@@ -198,8 +198,6 @@
 
 
 
-
-
 .Contact__content-rating{
     display: flex;
     align-items: center;
@@ -217,3 +215,60 @@
     width: 14px;
     height: 12px;
 }
+
+
+
+@media (max-width: 768px) {
+    .modalWindows{
+        position: relative;
+
+        min-width: auto;
+        max-width: 800px;
+    
+        min-height: auto;
+        height: 100%;
+        width: 100%;
+
+        padding: 24px 16px 0;
+    
+        border-radius: 0px;
+        background-color: var(--White);
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.20);
+    }
+    
+    .Contact{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 6px;
+    }
+
+    .Contact p {
+        max-width: 236px;
+        min-width: 120px;
+        cursor: pointer;
+        margin: 0;
+    }
+
+    .Contact__content-rating p {
+        margin: 0 8px 0 4px;
+        min-width: auto;
+    }
+
+    .modalWindows .accentButton{
+        position: absolute;
+        bottom: 24px;
+        width: 90%;
+    }
+
+    .modalWindows__title h3{
+        font-family: Segoe UI;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px; /* 140% */
+        letter-spacing: -0.2px;
+    }
+ 
+  
+  }
