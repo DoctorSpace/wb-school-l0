@@ -2,11 +2,26 @@
   display: none;
 }
 
+.tabbar button {
+  cursor: pointer;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.tabbar button:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
 .tabbar img {
   width: 28px;
   height: 28px;
-  /* height:  8.75vw; */
 }
+
+.tabbar__cart {
+  position: relative;
+}
+
 
 @media (max-width: 768px) {
   .tabbar {
@@ -26,5 +41,33 @@
 
     width: calc(100% - 8.125vw);
     padding: 0 4.0625vw;
+  }
+
+  .tabbar__cart-count {
+    position: absolute;
+  
+    color: var(--WhiteText);
+  
+    display: inline-flex;
+    height: 16px;
+    width: 16px;
+  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: var(--system-orange, #f55123);
+  
+    text-align: center;
+    font-family: Segoe UI;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 180% */
+  
+    z-index: 2;
+  
+    left: 20px;
+    bottom: 20px;
   }
 }

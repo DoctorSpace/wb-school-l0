@@ -10,11 +10,16 @@
   <body id="body">
 
     <div class="tabbar">
-      <img src="./src/img/tabbar/main.svg">
-      <img src="./src/img/tabbar/catalog.svg">
-      <img src="./src/img/tabbar/cart.svg">
-      <img src="./src/img/tabbar/favorites.svg">
-      <img src="./src/img/tabbar/profile.svg">
+      <button><img src="./src/img/tabbar/main.svg"></button>
+      <button><img src="./src/img/tabbar/catalog.svg"></button>
+      <button>
+        <div class="tabbar__cart">
+          <img src="./src/img/tabbar/cart.svg">
+          <div class="tabbar__cart-count" id="countActivProductsM">3</div>
+        </div>
+      </button>
+      <button><img src="./src/img/tabbar/favorites.svg"></button>
+      <button><img src="./src/img/tabbar/profile.svg"></button>
     </div>
 
     <div class="root">

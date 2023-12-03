@@ -291,10 +291,13 @@ header button {
     margin: 0;
     padding: 0;
     width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap:0;
   }
 
-  .header__action-basket, .header__action-profile{
+  .header__action-profile, .header__action-basket{
     display: none;
   }
 
@@ -313,6 +316,4 @@ header button {
     padding: 0;
     height: 6.75vw;
   }
-  
 }
-

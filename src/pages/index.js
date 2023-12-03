@@ -49,7 +49,6 @@ const totalPriceCounts = document.getElementById("totalPriceCounts");
 const totalDiscount = document.getElementById("totalDiscount");
 const Total = { totalPrice, totalCounts, totalPriceCounts, totalDiscount};
 
-
 const ocAllSelectedActiv = document.getElementById("ocAllSelectedActiv");
 const ocAllSelectedInactive = document.getElementById("ocAllSelectedInactive");
 
@@ -64,6 +63,8 @@ const OrderBtn = document.getElementById("OrderBtn");
 
 const allSelectedInactive = document.getElementById("allSelectedInactive");
 const countActivProducts = document.getElementById("countActivProducts");
+const countActivProductsM = document.getElementById("countActivProductsM");
+
 const ocAllSelectedActivText = document.getElementById( "ocAllSelectedActivText");
 const ocAllSelectedActivTextadd = document.getElementById( "ocAllSelectedActivTextadd");
 
@@ -519,6 +520,7 @@ bin1.addEventListener("click", () => {
   if (products[0].isSelected) {
     allSelectedActivCount--;
     countActivProducts.textContent = allSelectedActivCount;
+    countActivProductsM.textContent = allSelectedActivCount;
   }
   products[0].isSelected = false;
   products[0].isDeleted = true;
@@ -536,6 +538,7 @@ bin1.addEventListener("click", () => {
 
   if (allSelectedActivCount == 0) {
     countActivProducts.classList.add("dNone");
+    countActivProductsM.classList.add("dNone");
   }
 });
 
@@ -543,6 +546,7 @@ bin2.addEventListener("click", () => {
   if (products[1].isSelected) {
     allSelectedActivCount--;
     countActivProducts.textContent = allSelectedActivCount;
+    countActivProductsM.textContent = allSelectedActivCount;
   }
   products[1].isSelected = false;
   products[1].isDeleted = true;
@@ -563,6 +567,7 @@ bin2.addEventListener("click", () => {
 
   if (allSelectedActivCount == 0) {
     countActivProducts.classList.add("dNone");
+    countActivProductsM.classList.add("dNone");
   }
 });
 
@@ -570,6 +575,7 @@ bin3.addEventListener("click", () => {
   if (products[2].isSelected) {
     allSelectedActivCount--;
     countActivProducts.textContent = allSelectedActivCount;
+    countActivProductsM.textContent = allSelectedActivCount;
   }
   products[2].isSelected = false;
   products[2].isDeleted = true;
@@ -587,6 +593,7 @@ bin3.addEventListener("click", () => {
 
   if (allSelectedActivCount == 0) {
     countActivProducts.classList.add("dNone");
+    countActivProductsM.classList.add("dNone");
   }
 });
 
@@ -800,6 +807,9 @@ AllSelectCards.addEventListener("click", (em) => {
     countActivProducts.textContent = allSelectedActivCount;
     countActivProducts.classList.add("dNone");
 
+    countActivProductsM.textContent = allSelectedActivCount;
+    countActivProductsM.classList.add("dNone");
+
     arrivalKit1.classList.add("dNone");
 
     arrivalItem1.classList.add("dNone");
@@ -815,6 +825,9 @@ AllSelectCards.addEventListener("click", (em) => {
     if (allSelectedActivCount != 0) {
       countActivProducts.textContent = allSelectedActivCount;
       countActivProducts.classList.remove("dNone");
+
+      countActivProductsM.textContent = allSelectedActivCount;
+      countActivProductsM.classList.remove("dNone");
 
       arrivalKit1.classList.remove("dNone");
 
@@ -844,8 +857,10 @@ selectCard1.addEventListener("click", (em) => {
 
   if (products[0].isSelected) {
     countActivProducts.classList.remove("dNone");
+    countActivProductsM.classList.remove("dNone");
     allSelectedActivCount++;
     countActivProducts.textContent = allSelectedActivCount;
+    countActivProductsM.textContent = allSelectedActivCount;
 
     arrivalItem1.classList.remove("dNone");
 
@@ -858,8 +873,10 @@ selectCard1.addEventListener("click", (em) => {
   } else {
     allSelectedActivCount--;
     countActivProducts.textContent = allSelectedActivCount;
+    countActivProductsM.textContent = allSelectedActivCount;
     if (allSelectedActivCount == 0) {
       countActivProducts.classList.add("dNone");
+      countActivProductsM.classList.add("dNone");
     }
 
     arrivalItem1.classList.add("dNone");
@@ -889,8 +906,10 @@ selectCard2.addEventListener("click", (em) => {
 
 
     countActivProducts.classList.remove("dNone");
+    countActivProductsM.classList.remove("dNone");
     allSelectedActivCount++;
     countActivProducts.textContent = allSelectedActivCount;
+    countActivProductsM.textContent = allSelectedActivCount;
 
     for (var i = 0; i < arrivalItem2.length; i++) {
       if (products[2].quantityRemains <= products[2].quantity) {
@@ -906,8 +925,10 @@ selectCard2.addEventListener("click", (em) => {
   } else {
     allSelectedActivCount--;
     countActivProducts.textContent = allSelectedActivCount;
+    countActivProductsM.textContent = allSelectedActivCount;
     if (allSelectedActivCount == 0) {
       countActivProducts.classList.add("dNone");
+      countActivProductsM.classList.add("dNone");
     }
 
     for (var i = 0; i < arrivalItem2.length; i++) {
@@ -939,8 +960,10 @@ selectCard3.addEventListener("click", (em) => {
 
   if (products[2].isSelected) {
     countActivProducts.classList.remove("dNone");
+    countActivProductsM.classList.remove("dNone");
     allSelectedActivCount++;
     countActivProducts.textContent = allSelectedActivCount;
+    countActivProductsM.textContent = allSelectedActivCount;
 
     arrivalKit1.classList.remove("dNone");
     arrivalItem3.classList.remove("dNone");
@@ -954,8 +977,10 @@ selectCard3.addEventListener("click", (em) => {
   } else {
     allSelectedActivCount--;
     countActivProducts.textContent = allSelectedActivCount;
+    countActivProductsM.textContent = allSelectedActivCount;
     if (allSelectedActivCount == 0) {
       countActivProducts.classList.add("dNone");
+      countActivProductsM.classList.add("dNone");
     }
 
     arrivalItem3.classList.add("dNone");

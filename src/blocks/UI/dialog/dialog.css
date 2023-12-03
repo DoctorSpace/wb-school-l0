@@ -80,9 +80,28 @@ dialog span{
   line-height: 16px;
 }
 
-
 @media (max-width: 768px) {
   .dialog-info{
+    left: 90px;
+    margin-top: 22px;
+  }
+
+  .dialog-result-info{
+    left: 90px;
+    margin-top: 22px;
+  }
+
+}
+
+
+
+@media (max-width: 426px) {
+  .dialog-info{
+    left: -40px;
+    margin-top: 38px;
+  }
+
+  .dialog-result-info{
     left: -40px;
     margin-top: 38px;
   }
